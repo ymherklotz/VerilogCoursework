@@ -2,6 +2,7 @@
 
 In this experiment we will be programming a Cyclone V FPGA from Altera on a DE1-SoC Board that was made by Terasica. We will be using verilog in Quartus II to program the FPGA. 
 
+
 ## Experiment 1: Schematic capture using Quartus II -- 7-Segment Display
 
 We first downloaded the solution for Exercise 1 and tried programming the FPGA using the Programmer from Quartus. The software didn't detect the DE1-SoC board and we had to turn it off and on again for the DE-SOC [USB-1] to appear. After we then added the right type of FPGA to the project (5CSEMA5) and deleted the ARM processor from the programmer window (SOCVHPS) we were able to add the solution to the FPGA and download it onto the board.
@@ -18,7 +19,13 @@ We then compiled the Quartus project to see if there are any errors in the files
 
 ![Pin Planner](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex1/PinPlannerEx1.PNG)
 
-Finally we compiled the project and downloaded it ono the FPGA and it worked like the solution. 
+Finally we compiled the project and downloaded it onto the FPGA and it worked like the solution. 
 
-### Propagation Delaty from inputs to outputs
 
+### Propagation Delays from inputs to outputs
+
+To analyze the propagation delays from inputs to outputs we used the TimeQuest Timing Analyzer to create a table that contains all the propagation delays of all the inputs and outputs. First we looked at the propagation delay under the conditions "Slow 1100mV 0°C". This gave the following table.
+
+![0 degrees timing](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex1/RiseAndFall0degree.PNG)
+
+From this 
