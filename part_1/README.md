@@ -59,6 +59,36 @@ We typed the code for the 7-Segment Decoder in Quartus and created the module as
 
 ![7-Segment Decoder Verilog](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex2/hex_to_7seg.PNG)
 
+'''verilog
+module hex_to_7seg (out, in);
+
+	output [6:0] out;
+	input [3:0] in;
+	
+	reg [6:0] out;
+	
+	always @ (*)
+		case(in)
+			4'h0: out = 7'b1000000;
+			4'h1: out = 7'b1111001;
+			4'h2: out = 7'b0100100;
+			4'h3: out = 7'b0110000;
+			4'h4: out = 7'b0011001;
+			4'h5: out = 7'b0010010;
+			4'h6: out = 7'b0000010;
+			4'h7: out = 7'b1111000;
+			4'h8: out = 7'b0000000;
+			4'h9: out = 7'b0011000;
+			4'ha: out = 7'b0001000;
+			4'hb: out = 7'b0000011;
+			4'hc: out = 7'b1000110;
+			4'hd: out = 7'b0100001;
+			4'he: out = 7'b0000110;
+			4'hf: out = 7'b0001110;
+		endcase
+endmodule
+'''
+
 Then we created a top level design file in Verilog as well. This process is much faster than doing everything using schematics as one can easily edit the file and change parameters easily as well. It is also much easier to get an overview of the project as complicated schematic files are very hard to read. The code for the top level design can be seen below.
 
 ![7-Segment Decoder top level](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex2/top_ex2.PNG)
