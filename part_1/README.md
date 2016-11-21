@@ -5,7 +5,13 @@ In this experiment we will be programming a Cyclone V FPGA from Altera on a DE1-
 
 ## Experiment 1: Schematic capture using Quartus II -- 7-Segment Display
 
+
+### Introduction
+
 We first downloaded the solution for Exercise 1 and tried programming the FPGA using the Programmer from Quartus. The software didn't detect the DE1-SoC board and we had to turn it off and on again for the DE-SOC [USB-1] to appear. After we then added the right type of FPGA to the project (5CSEMA5) and deleted the ARM processor from the programmer window (SOCVHPS) we were able to add the solution to the FPGA and download it onto the board.
+
+
+### Using Block Diagram
 
 We then used the truth table for the 7-Segment Decoder to create the K-map for the output number 4, so that we can extract the Sum of Products form from the K-map. We then added the missing output to the incomplete block diagram.
 
@@ -41,3 +47,8 @@ __Slow 1100mV 85°C TimeQuest Timing Analyzer Table__
 
 The output on these tables shows the propagation delays from the inputs to the outputs. The 4 different rows have 4 different abreviations RR, RF, FR and FF, that stand for Rise-Rise, Rise-Fall, Fall-Rise and Fall-Fall respectively. These describe the time it takes for the signal to travel from a rise or fall of the signal to produce a rise or fall in the output signal. There are some boxes in the table that do not have a time in there, this is because these connections never happen and therefore the FPGA simplifies them and does not even connect them, and therefore they do not have a time. The times are also measured in nanoseconds. 
 With the help of these tables we can observe that when the FPGA is at 85°C, the times between the inputs and outputs is higher than when the FPGA is cooled at 0°C. This can be explained by how fast the gates switch due to the transistor voltages switching. The switching time increases as the temperature increases and therefore the time between the inputs and outputs will increase as well.
+
+
+## Experiment 2: 7-Segment Decoder in Verilog HDL
+
+
