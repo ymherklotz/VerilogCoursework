@@ -57,8 +57,6 @@ As modern digital designers do not use schematics anymore to design hardware it 
 
 We typed the code for the 7-Segment Decoder in Quartus and created the module as shown below.
 
-![7-Segment Decoder Verilog](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex2/hex_to_7seg.PNG)
-
 ```verilog
 module hex_to_7seg (out, in);
 	
@@ -91,7 +89,16 @@ endmodule
 
 Then we created a top level design file in Verilog as well. This process is much faster than doing everything using schematics as one can easily edit the file and change parameters easily as well. It is also much easier to get an overview of the project as complicated schematic files are very hard to read. The code for the top level design can be seen below.
 
-![7-Segment Decoder top level](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex2/top_ex2.PNG)
+```verilog
+module ex2(SW, HEX0);
+
+	input [3:0] SW;
+	output [6:0] HEX0;
+	
+	hex_to_7seg SEG0(HEX0, SW);
+
+endmodule
+```
 
 We checked the syntax of the files and then ran analysis and elaboration which returns early errors that we made while writing the verilog and in the logic of the design. We then added the pin assignments in text directly in the "ex1.qsf" file which is also so much faster than using the Pin Planner as we can just copy and paste the pin assignments into our other projects that we are going to create in the future and won't have to waste time on using the Pin Planner and looking up the names of all the pins that we wanted to use.
 
@@ -105,5 +112,17 @@ A 10-bit binary switch display program will collect all the input bits from the 
 
 For this project we had to create a new top-level design file, howver we were able to reuse our 7-Segment Decoder code that we wrote for Experiment 2. Apart from that we didn't have to create any other module for this Experiment as the 7-Segment Decoders are just going to display the hexadecimal values of the switches, which does not require any converting. The code that we wrote for the top level design is shown below.
 
-![Experiment 3: Top level design](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex3/top_level.PNG)
-
+```verilog
+module ex3(SW, HEX0, HEX1, HEX2);
+				
+	input [9:0] SW;
+	output [6:0] HEX0;
+	output [6:0] HEX1;
+	output [6:0] HEX2;
+	
+	hex_to_7seg SEG0 (HEX0, SW[3:0]);
+	hex_to_7seg SEG1 (HEX1, SW[7:4]);
+	hex_to_7seg SEG2 (HEX2, SW[9:8]);
+	
+endmodule
+```
