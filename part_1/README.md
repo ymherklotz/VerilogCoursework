@@ -126,3 +126,12 @@ module ex3(SW, HEX0, HEX1, HEX2);
 	
 endmodule
 ```
+
+This takes in the 10-bit input from the 10 switches, which are assigned to by the text file, and set the output to be the hex display. We then checked the syntax again and ran the analysis and elaboration on the project to see if there are any errors. 
+
+When programming the FPGA we tested it by setting known binary values into the switches and checked if the displays showed the correct values.
+
+
+## Experiment 4: Displaying 10-bit binary as BCD digits on the 7-Segment Displays
+
+
