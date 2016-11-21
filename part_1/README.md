@@ -53,3 +53,13 @@ With the help of these tables we can observe that when the FPGA is at 85°C, the
 ## Experiment 2: 7-Segment Decoder in Verilog HDL
 
 
+As modern digital designers do not use schematics anymore to design hardware it is much more useful to learn how to describe the hardware using a Hardware Description Language (HDL) such as VHDL or Verilog HDL. 
+
+We typed the code for the 7-Segment Decoder in Quartus and created the module as shown below.
+
+![7-Segment Decoder Verilog](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex2/hex_to_7seg.PNG)
+
+Then we created a top level design file in Verilog as well. This process is much faster than doing everything using schematics as one can easily edit the file and change parameters easily as well. It is also much easier to get an overview of the project as complicated schematic files are very hard to read. The code for the top level design can be seen below.
+
+![7-Segment Decoder top level](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex2/top_ex2.PNG)
+
