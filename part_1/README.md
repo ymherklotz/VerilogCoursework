@@ -11,15 +11,15 @@ We then used the truth table for the 7-Segment Decoder to create the K-map for t
 
 ![Output 4](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex1/ex1Schematic.PNG)
 
-We then created a new block diagram, and made a symbol file for the 7-Segment Decoder, so that we can include it in this block diagram. We then made this block diagram our top-level design.
+We then created a new block diagram, and made a symbol file for the 7-Segment Decoder, so that we can include it in this block diagram. We then made this block diagram our top-level design. This is the file that will make the whole project work on the FPGA and will be programmed onto the FPGA. The other file is just a schematic file that describes how the block in the top level design works.
 
 ![ex1 top-level design](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex1/Ex1BDF.PNG)
 
-We then compiled the Quartus project to see if there are any errors in the files, and then we added the pin assignments using the Pin Planner
+We then compiled the Quartus project to see if there are any errors in the files, and then we added the pin assignments using the Pin Planner.
 
 ![Pin Planner](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex1/PinPlannerEx1.PNG)
 
-Finally we compiled the project and downloaded it onto the FPGA and it worked like the solution. 
+Finally we compiled the project and downloaded it onto the FPGA and it worked like the solution. Using the block diagram to create the project took a lot of time though and it would have been much easier to make the project in Verilog as it would have taken much less time and effort. We also wouldn't have had to create the Karnaugh maps to simplify the design and be able to implement it in the block diagram, because in Verilog we only need to implement the truth table. It is also much quicker to type than drag the wires from logic element to logic element and trying to find the different logic elements in the list of IPs that come with Quartus II. Verilog is also much more flexible, as we can define the 7-Segment Decoder in different ways (behaviourly or structurally). 
 
 
 ### Propagation Delays from inputs to outputs
