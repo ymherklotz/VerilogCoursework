@@ -63,3 +63,17 @@ Then we created a top level design file in Verilog as well. This process is much
 
 ![7-Segment Decoder top level](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex2/top_ex2.PNG)
 
+We checked the syntax of the files and then ran analysis and elaboration which returns early errors that we made while writing the verilog and in the logic of the design. We then added the pin assignments in text directly in the "ex1.qsf" file which is also so much faster than using the Pin Planner as we can just copy and paste the pin assignments into our other projects that we are going to create in the future and won't have to waste time on using the Pin Planner and looking up the names of all the pins that we wanted to use.
+
+We then put the module into our mylib folder so that we can reuse the code in later projects. This is also another advantage of using Verilog instead of schematics as the code can easily be reused in other projects and even in other FPGAs as Verilog only describes the hardware and the program that has to program the FPGA is in charge of implementing it.
+
+
+## Experiment 3: 10-bit binary switch values on three 7-Segment Displays
+
+
+A 10-bit binary switch display program will collect all the input bits from the switches and output them to the 3 7-Segment Displays. This just means that we have to split up the 10 bits into groups of 4, as this gives the value for one hexadecimal number to be displayed. This will give two 4-bit hexadecimal numbers and one 2-bit hexadecimal number where we can just set the two most significant bits to 0. 
+
+For this project we had to create a new top-level design file, howver we were able to reuse our 7-Segment Decoder code that we wrote for Experiment 2. Apart from that we didn't have to create any other module for this Experiment as the 7-Segment Decoders are just going to display the hexadecimal values of the switches, which does not require any converting. The code that we wrote for the top level design is shown below.
+
+![Experiment 3: Top level design](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex3/top_level.PNG)
+
