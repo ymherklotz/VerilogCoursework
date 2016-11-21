@@ -46,6 +46,7 @@ __Slow 1100mV 85°C TimeQuest Timing Analyzer Table__
 
 
 The output on these tables shows the propagation delays from the inputs to the outputs. The 4 different rows have 4 different abreviations RR, RF, FR and FF, that stand for Rise-Rise, Rise-Fall, Fall-Rise and Fall-Fall respectively. These describe the time it takes for the signal to travel from a rise or fall of the signal to produce a rise or fall in the output signal. There are some boxes in the table that do not have a time in there, this is because these connections never happen and therefore the FPGA simplifies them and does not even connect them, and therefore they do not have a time. The times are also measured in nanoseconds. 
+
 With the help of these tables we can observe that when the FPGA is at 85°C, the times between the inputs and outputs is higher than when the FPGA is cooled at 0°C. This can be explained by how fast the gates switch due to the transistor voltages switching. The switching time increases as the temperature increases and therefore the time between the inputs and outputs will increase as well.
 
 
