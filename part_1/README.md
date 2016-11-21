@@ -27,7 +27,12 @@ Finally we compiled the project and downloaded it onto the FPGA and it worked li
 To analyze the propagation delays from inputs to outputs we used the TimeQuest Timing Analyzer to create a table that contains all the propagation delays of all the inputs and outputs. First we looked at the propagation delay under the conditions "Slow 1100mV 0°C". This gave the following table.
 
 ![0 degrees timing](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex1/RiseAndFall0degree.PNG)
+
 __Slow 1100mV 0°C TimeQuest Timing Analyzer Table__
+
+
 ![85 degrees timing](https://github.com/ymherklotz/digital_verilog_coursework/blob/master/Extra/ex1/RiseAndFall85degree.PNG)
+
+__Slow 1100mV 0°C TimeQuest Timing Analyzer Table__
 
 From these two tables we can 
