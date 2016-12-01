@@ -1,0 +1,11 @@
+module LFSR(CLK, COUNT);
+	input CLK;
+	output[7:0] COUNT;
+	reg[7:0] COUNT;
+	initial COUNT = 7'b1;
+		
+	always @ (posedge CLK)
+		COUNT <= {COUNT[6:0], COUNT[7] ^ COUNT[1]};
+		
+endmodule
+	

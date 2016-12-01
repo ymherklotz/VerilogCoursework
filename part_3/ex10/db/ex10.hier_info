@@ -1,0 +1,66 @@
+|ex10
+CLOCK_50 => CLOCK_50.IN2
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+SW[9] => SW[9].IN1
+DAC_CS << spi2dac:s.port4
+DAC_SDI << spi2dac:s.port3
+DAC_LD << spi2dac:s.port6
+DAC_SCK << spi2dac:s.port5
+
+
+|ex10|tick_5000:t
+CLOCK_IN => count[0].CLK
+CLOCK_IN => count[1].CLK
+CLOCK_IN => count[2].CLK
+CLOCK_IN => count[3].CLK
+CLOCK_IN => count[4].CLK
+CLOCK_IN => count[5].CLK
+CLOCK_IN => count[6].CLK
+CLOCK_IN => count[7].CLK
+CLOCK_IN => count[8].CLK
+CLOCK_IN => count[9].CLK
+CLOCK_IN => count[10].CLK
+CLOCK_IN => count[11].CLK
+CLOCK_IN => count[12].CLK
+CLOCK_IN => count[13].CLK
+CLOCK_IN => count[14].CLK
+CLOCK_IN => count[15].CLK
+CLOCK_IN => CLK_OUT~reg0.CLK
+CLK_OUT <= CLK_OUT~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ex10|spi2dac:s
+sysclk => clk_1MHz.CLK
+sysclk => ctr[0].CLK
+sysclk => ctr[1].CLK
+sysclk => ctr[2].CLK
+sysclk => ctr[3].CLK
+sysclk => ctr[4].CLK
+sysclk => sr_state~4.DATAIN
+data_in[0] => shift_reg.DATAB
+data_in[1] => shift_reg.DATAB
+data_in[2] => shift_reg.DATAB
+data_in[3] => shift_reg.DATAB
+data_in[4] => shift_reg.DATAB
+data_in[5] => shift_reg.DATAB
+data_in[6] => shift_reg.DATAB
+data_in[7] => shift_reg.DATAB
+data_in[8] => shift_reg.DATAB
+data_in[9] => shift_reg.DATAB
+load => sr_state.OUTPUTSELECT
+load => sr_state.OUTPUTSELECT
+load => sr_state.OUTPUTSELECT
+dac_sdi <= shift_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+dac_cs <= WideNor0.DB_MAX_OUTPUT_PORT_TYPE
+dac_sck <= dac_sck.DB_MAX_OUTPUT_PORT_TYPE
+dac_ld <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+
+

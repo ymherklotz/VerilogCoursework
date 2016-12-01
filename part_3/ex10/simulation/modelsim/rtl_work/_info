@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\New folder\ex10\simulation\modelsim
+vspi2dac
+!i10b 1
+!s100 Yc_:?1WP<4LKj7cQXiUbl1
+IzTNjHgWKkeSFYc0]WM5Gm2
+VFNOGDa=aYhJTn=76LYB@A2
+Z1 dC:\New folder\ex10\simulation\modelsim
+w1478805578
+8C:/New folder/ex10/verilog_files/spi2dac.v
+FC:/New folder/ex10/verilog_files/spi2dac.v
+L0 9
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1480413939.783000
+!s107 C:/New folder/ex10/verilog_files/spi2dac.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/New folder/ex10/verilog_files|C:/New folder/ex10/verilog_files/spi2dac.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work {+incdir+C:/New folder/ex10/verilog_files} -O0

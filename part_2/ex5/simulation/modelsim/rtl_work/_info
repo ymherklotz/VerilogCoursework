@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\New folder\simulation\modelsim
+vcounter_8
+!i10b 1
+!s100 ;ldZ:oUkgLo?@Aa7ibdbm2
+Ia91@O_<g0BVIc?WTzTbB62
+Vdn7aTnOzPKdeZA;zmQ`Cl3
+Z1 dC:\New folder\simulation\modelsim
+w1479807538
+8C:/New folder/verilog_files/counter_8.v
+FC:/New folder/verilog_files/counter_8.v
+L0 3
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1479807676.024000
+!s107 C:/New folder/verilog_files/counter_8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/New folder/verilog_files|C:/New folder/verilog_files/counter_8.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work {+incdir+C:/New folder/verilog_files} -O0

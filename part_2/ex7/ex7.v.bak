@@ -1,0 +1,13 @@
+module ex7(CLOCK_50, HEX0, HEX1);
+
+	input CLOCK_50;
+	output [3:0] HEX0, HEX1;
+
+	wire[7:0] count;
+	
+	LFSR(CLOCK_50, count);
+	
+	hex_to_7seg(HEX0, count[3:0]);
+	hex_to_7seg(HEX1, count[7:4]);
+
+endmodule

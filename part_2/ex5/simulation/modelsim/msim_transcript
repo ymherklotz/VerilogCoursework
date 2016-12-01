@@ -1,0 +1,102 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# Bad font spec for Editor textFont: t_fixed
+# do ex5_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/New\ folder/verilog_files {C:/New folder/verilog_files/counter_8.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_8
+# 
+# Top level modules:
+# 	counter_8
+# 
+vsim -do ex5_run_msim_rtl_verilog.do -l msim_transcript -gui work.counter_8
+# vsim -do ex5_run_msim_rtl_verilog.do -l msim_transcript -gui work.counter_8 
+# Loading work.counter_8
+# do ex5_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/New\ folder/verilog_files {C:/New folder/verilog_files/counter_8.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter_8
+# 
+# Top level modules:
+# 	counter_8
+# 
+add wave clock enable
+add wave -hexadecimal count
+force enable 1
+run 100ns
+force clock 0 0, 1 10ns -repeat 20ns
+run 100ns
+clear
+# invalid command name "clear"
+clr
+# invalid command name "clr"
+cls
+# 
+restart
+# Loading work.counter_8
+do ./tb_counter.do
+# Cannot open macro file: ./tb_counter.do
+restart
+do ./tb_counter.do
+step
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 10 ns.
+# 
+# Next activity is in 10 ns.
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 10 ns.
+# 
+# Next activity is in 10 ns.
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 10 ns.
+# 
+# Next activity is in 10 ns.
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 10 ns.
+# 
+# Next activity is in 10 ns.
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 10 ns.
+# 
+# Next activity is in 10 ns.
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 10 ns.
+# 
+# Next activity is in 10 ns.
+step -over
+step -over
+step -over

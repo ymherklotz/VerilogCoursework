@@ -1,0 +1,20 @@
+module ex6(clock, KEY, HEX0, HEX1, HEX2, HEX3, HEX4);
+	
+	input clock;
+	input [1:0] KEY;
+	output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4;
+	
+	wire [15:0] count;
+	wire [3:0] b0, b1, b2, b3, b4;
+	
+	counter_16(clock, KEY[0], KEY[1], count);
+	bin2bcd_16(count, b0, b1, b2, b3, b4);
+	hex_to_7seg(HEX0, b0);
+	hex_to_7seg(HEX1, b1);
+	hex_to_7seg(HEX2, b2);
+	hex_to_7seg(HEX3, b3);
+	hex_to_7seg(HEX4, b4);
+	
+endmodule
+	
+	
