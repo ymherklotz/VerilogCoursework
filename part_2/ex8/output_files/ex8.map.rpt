@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ex8
-Fri Nov 25 10:20:39 2016
+Wed Dec 07 12:21:24 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
 
 
@@ -61,13 +61,13 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Nov 25 10:20:39 2016           ;
+; Analysis & Synthesis Status     ; Successful - Wed Dec 07 12:21:23 2016           ;
 ; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
 ; Revision Name                   ; ex8                                             ;
 ; Top-level Entity Name           ; ex8                                             ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 68                                              ;
+; Total registers                 ; 67                                              ;
 ; Total pins                      ; 36                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -182,26 +182,25 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                  ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------+---------+
-; verilog_files/tick_50000.v       ; yes             ; User Verilog HDL File  ; C:/New folder/ex8/verilog_files/tick_50000.v  ;         ;
-; verilog_files/LFSR.v             ; yes             ; User Verilog HDL File  ; C:/New folder/ex8/verilog_files/LFSR.v        ;         ;
-; verilog_files/hex_to_7seg.v      ; yes             ; User Verilog HDL File  ; C:/New folder/ex8/verilog_files/hex_to_7seg.v ;         ;
-; verilog_files/bin2bcd_16.v       ; yes             ; User Verilog HDL File  ; C:/New folder/ex8/verilog_files/bin2bcd_16.v  ;         ;
-; verilog_files/add3_ge5.v         ; yes             ; User Verilog HDL File  ; C:/New folder/ex8/verilog_files/add3_ge5.v    ;         ;
-; verilog_files/formula_fsm.v      ; yes             ; User Verilog HDL File  ; C:/New folder/ex8/verilog_files/formula_fsm.v ;         ;
-; verilog_files/delay.v            ; yes             ; User Verilog HDL File  ; C:/New folder/ex8/verilog_files/delay.v       ;         ;
-; verilog_files/tick_2500.v        ; yes             ; User Verilog HDL File  ; C:/New folder/ex8/verilog_files/tick_2500.v   ;         ;
-; verilog_files/ex8.v              ; yes             ; User Verilog HDL File  ; C:/New folder/ex8/verilog_files/ex8.v         ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
+; verilog_files/tick_50000.v       ; yes             ; User Verilog HDL File  ; H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/tick_50000.v  ;         ;
+; verilog_files/LFSR.v             ; yes             ; User Verilog HDL File  ; H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/LFSR.v        ;         ;
+; verilog_files/hex_to_7seg.v      ; yes             ; User Verilog HDL File  ; H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/hex_to_7seg.v ;         ;
+; verilog_files/bin2bcd_16.v       ; yes             ; User Verilog HDL File  ; H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/bin2bcd_16.v  ;         ;
+; verilog_files/add3_ge5.v         ; yes             ; User Verilog HDL File  ; H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/add3_ge5.v    ;         ;
+; verilog_files/formula_fsm.v      ; yes             ; User Verilog HDL File  ; H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/formula_fsm.v ;         ;
+; verilog_files/delay.v            ; yes             ; User Verilog HDL File  ; H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/delay.v       ;         ;
+; verilog_files/tick_2500.v        ; yes             ; User Verilog HDL File  ; H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/tick_2500.v   ;         ;
+; verilog_files/ex8.v              ; yes             ; User Verilog HDL File  ; H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v         ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------+
@@ -209,25 +208,25 @@ agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 76                       ;
+; Estimate of Logic utilization (ALMs needed) ; 86                       ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 139                      ;
+; Combinational ALUT usage for logic          ; 142                      ;
 ;     -- 7 input functions                    ; 0                        ;
-;     -- 6 input functions                    ; 11                       ;
-;     -- 5 input functions                    ; 14                       ;
-;     -- 4 input functions                    ; 33                       ;
-;     -- <=3 input functions                  ; 81                       ;
+;     -- 6 input functions                    ; 29                       ;
+;     -- 5 input functions                    ; 5                        ;
+;     -- 4 input functions                    ; 40                       ;
+;     -- <=3 input functions                  ; 68                       ;
 ;                                             ;                          ;
-; Dedicated logic registers                   ; 68                       ;
+; Dedicated logic registers                   ; 67                       ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 36                       ;
 ;                                             ;                          ;
 ; Total DSP Blocks                            ; 0                        ;
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; tick_50000:TICK0|CLK_OUT ;
-; Maximum fan-out                             ; 41                       ;
-; Total fan-out                               ; 685                      ;
-; Average fan-out                             ; 2.46                     ;
+; Maximum fan-out                             ; 50                       ;
+; Total fan-out                               ; 739                      ;
+; Average fan-out                             ; 2.63                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -236,19 +235,18 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------+-------------+--------------+
-; |ex8                       ; 139 (1)           ; 68 (0)       ; 0                 ; 0          ; 36   ; 0            ; |ex8                             ; ex8         ; work         ;
+; |ex8                       ; 142 (1)           ; 67 (0)       ; 0                 ; 0          ; 36   ; 0            ; |ex8                             ; ex8         ; work         ;
 ;    |LFSR:LFSR0|            ; 3 (3)             ; 7 (7)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|LFSR:LFSR0                  ; LFSR        ; work         ;
-;    |bin2bcd_16:BCD|        ; 14 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD              ; bin2bcd_16  ; work         ;
+;    |bin2bcd_16:BCD|        ; 13 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD              ; bin2bcd_16  ; work         ;
 ;       |add3_ge5:A22|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A22 ; add3_ge5    ; work         ;
 ;       |add3_ge5:A26|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A26 ; add3_ge5    ; work         ;
 ;       |add3_ge5:A30|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A30 ; add3_ge5    ; work         ;
-;       |add3_ge5:A34|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A34 ; add3_ge5    ; work         ;
 ;       |add3_ge5:A35|       ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A35 ; add3_ge5    ; work         ;
-;    |delay:DEL0|            ; 22 (22)           ; 18 (18)      ; 0                 ; 0          ; 0    ; 0            ; |ex8|delay:DEL0                  ; delay       ; work         ;
-;    |formula_fsm:FSM|       ; 16 (16)           ; 13 (13)      ; 0                 ; 0          ; 0    ; 0            ; |ex8|formula_fsm:FSM             ; formula_fsm ; work         ;
+;    |delay:DEL0|            ; 25 (25)           ; 18 (18)      ; 0                 ; 0          ; 0    ; 0            ; |ex8|delay:DEL0                  ; delay       ; work         ;
+;    |formula_fsm:FSM|       ; 43 (43)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |ex8|formula_fsm:FSM             ; formula_fsm ; work         ;
 ;    |hex_to_7seg:SEG0|      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|hex_to_7seg:SEG0            ; hex_to_7seg ; work         ;
 ;    |hex_to_7seg:SEG1|      ; 13 (13)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|hex_to_7seg:SEG1            ; hex_to_7seg ; work         ;
-;    |tick_2500:TICK1|       ; 27 (27)           ; 13 (13)      ; 0                 ; 0          ; 0    ; 0            ; |ex8|tick_2500:TICK1             ; tick_2500   ; work         ;
+;    |hex_to_7seg:SEG2|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ex8|hex_to_7seg:SEG2            ; hex_to_7seg ; work         ;
 ;    |tick_50000:TICK0|      ; 36 (36)           ; 17 (17)      ; 0                 ; 0          ; 0    ; 0            ; |ex8|tick_50000:TICK0            ; tick_50000  ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -306,12 +304,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 68    ;
+; Total registers                              ; 67    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 15    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Clock Enable       ; 26    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -331,13 +329,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; tick_50000:TICK0|count[6]               ; 2       ;
 ; tick_50000:TICK0|count[8]               ; 2       ;
 ; tick_50000:TICK0|count[9]               ; 2       ;
-; tick_2500:TICK1|count[11]               ; 8       ;
-; tick_2500:TICK1|count[0]                ; 2       ;
-; tick_2500:TICK1|count[1]                ; 2       ;
-; tick_2500:TICK1|count[6]                ; 2       ;
-; tick_2500:TICK1|count[7]                ; 2       ;
-; tick_2500:TICK1|count[8]                ; 2       ;
-; Total number of inverted registers = 16 ;         ;
+; Total number of inverted registers = 10 ;         ;
 +-----------------------------------------+---------+
 
 
@@ -346,11 +338,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
-; 5:1                ; 7 bits    ; 21 LEs        ; 7 LEs                ; 14 LEs                 ; Yes        ; |ex8|delay:DEL0|count[2]       ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 7 LEs                ; 14 LEs                 ; Yes        ; |ex8|delay:DEL0|count[13]      ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |ex8|formula_fsm:FSM|Selector2 ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |ex8|delay:DEL0|Selector16     ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |ex8|delay:DEL0|Selector17     ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |ex8|formula_fsm:FSM|count[11] ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 7 LEs                ; 14 LEs                 ; Yes        ; |ex8|delay:DEL0|count[0]       ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 7 LEs                ; 14 LEs                 ; Yes        ; |ex8|delay:DEL0|count[9]       ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |ex8|formula_fsm:FSM|Selector3 ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |ex8|delay:DEL0|Selector15     ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |ex8|delay:DEL0|Selector14     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------+
 
 
@@ -471,26 +464,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 68                          ;
-;     ENA               ; 18                          ;
+; arriav_ff             ; 67                          ;
+;     ENA               ; 12                          ;
 ;     ENA SLD           ; 14                          ;
 ;     SLD               ; 1                           ;
-;     plain             ; 35                          ;
-; arriav_lcell_comb     ; 143                         ;
+;     plain             ; 40                          ;
+; arriav_lcell_comb     ; 145                         ;
 ;     arith             ; 42                          ;
 ;         1 data inputs ; 42                          ;
-;     normal            ; 101                         ;
+;     normal            ; 103                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 20                          ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 33                          ;
-;         5 data inputs ; 14                          ;
-;         6 data inputs ; 11                          ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 6                           ;
+;         4 data inputs ; 40                          ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 29                          ;
 ; boundary_port         ; 36                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.91                        ;
+; Average LUT depth     ; 2.87                        ;
 +-----------------------+-----------------------------+
 
 
@@ -509,71 +502,71 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
-    Info: Processing started: Fri Nov 25 10:20:29 2016
+    Info: Processing started: Wed Dec 07 12:21:11 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ex8 -c ex8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/tick_50000.v
-    Info (12023): Found entity 1: tick_50000 File: C:/New folder/ex8/verilog_files/tick_50000.v Line: 1
+    Info (12023): Found entity 1: tick_50000 File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/tick_50000.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/lfsr.v
-    Info (12023): Found entity 1: LFSR File: C:/New folder/ex8/verilog_files/LFSR.v Line: 1
+    Info (12023): Found entity 1: LFSR File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/LFSR.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/hex_to_7seg.v
-    Info (12023): Found entity 1: hex_to_7seg File: C:/New folder/ex8/verilog_files/hex_to_7seg.v Line: 1
+    Info (12023): Found entity 1: hex_to_7seg File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/hex_to_7seg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/counter_16.v
-    Info (12023): Found entity 1: counter_16 File: C:/New folder/ex8/verilog_files/counter_16.v Line: 3
+    Info (12023): Found entity 1: counter_16 File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/counter_16.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/bin2bcd_16.v
-    Info (12023): Found entity 1: bin2bcd_16 File: C:/New folder/ex8/verilog_files/bin2bcd_16.v Line: 12
+    Info (12023): Found entity 1: bin2bcd_16 File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/bin2bcd_16.v Line: 12
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/add3_ge5.v
-    Info (12023): Found entity 1: add3_ge5 File: C:/New folder/ex8/verilog_files/add3_ge5.v Line: 9
+    Info (12023): Found entity 1: add3_ge5 File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/add3_ge5.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/formula_fsm.v
-    Info (12023): Found entity 1: formula_fsm File: C:/New folder/ex8/verilog_files/formula_fsm.v Line: 1
+    Info (12023): Found entity 1: formula_fsm File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/formula_fsm.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/delay.v
-    Info (12023): Found entity 1: delay File: C:/New folder/ex8/verilog_files/delay.v Line: 1
+    Info (12023): Found entity 1: delay File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/delay.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/tick_2500.v
-    Info (12023): Found entity 1: tick_2500 File: C:/New folder/ex8/verilog_files/tick_2500.v Line: 1
+    Info (12023): Found entity 1: tick_2500 File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/tick_2500.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file verilog_files/ex8.v
-    Info (12023): Found entity 1: ex8 File: C:/New folder/ex8/verilog_files/ex8.v Line: 1
+    Info (12023): Found entity 1: ex8 File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 1
 Info (12127): Elaborating entity "ex8" for the top level hierarchy
-Info (12128): Elaborating entity "tick_50000" for hierarchy "tick_50000:TICK0" File: C:/New folder/ex8/verilog_files/ex8.v Line: 13
-Info (12128): Elaborating entity "tick_2500" for hierarchy "tick_2500:TICK1" File: C:/New folder/ex8/verilog_files/ex8.v Line: 14
-Info (12128): Elaborating entity "formula_fsm" for hierarchy "formula_fsm:FSM" File: C:/New folder/ex8/verilog_files/ex8.v Line: 15
-Info (10264): Verilog HDL Case Statement information at formula_fsm.v(37): all case item expressions in this case statement are onehot File: C:/New folder/ex8/verilog_files/formula_fsm.v Line: 37
-Warning (10240): Verilog HDL Always Construct warning at formula_fsm.v(47): inferring latch(es) for variable "start_delay", which holds its previous value in one or more paths through the always construct File: C:/New folder/ex8/verilog_files/formula_fsm.v Line: 47
-Info (10041): Inferred latch for "start_delay" at formula_fsm.v(47) File: C:/New folder/ex8/verilog_files/formula_fsm.v Line: 47
-Info (12128): Elaborating entity "LFSR" for hierarchy "LFSR:LFSR0" File: C:/New folder/ex8/verilog_files/ex8.v Line: 16
-Info (12128): Elaborating entity "delay" for hierarchy "delay:DEL0" File: C:/New folder/ex8/verilog_files/ex8.v Line: 17
-Warning (10230): Verilog HDL assignment warning at delay.v(24): truncated value with size 32 to match size of target (14) File: C:/New folder/ex8/verilog_files/delay.v Line: 24
-Info (12128): Elaborating entity "bin2bcd_16" for hierarchy "bin2bcd_16:BCD" File: C:/New folder/ex8/verilog_files/ex8.v Line: 18
-Info (12128): Elaborating entity "add3_ge5" for hierarchy "bin2bcd_16:BCD|add3_ge5:A1" File: C:/New folder/ex8/verilog_files/bin2bcd_16.v Line: 26
-Info (12128): Elaborating entity "hex_to_7seg" for hierarchy "hex_to_7seg:SEG0" File: C:/New folder/ex8/verilog_files/ex8.v Line: 19
+Info (12128): Elaborating entity "tick_50000" for hierarchy "tick_50000:TICK0" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 13
+Info (12128): Elaborating entity "tick_2500" for hierarchy "tick_2500:TICK1" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 14
+Info (12128): Elaborating entity "formula_fsm" for hierarchy "formula_fsm:FSM" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 15
+Info (10264): Verilog HDL Case Statement information at formula_fsm.v(39): all case item expressions in this case statement are onehot File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/formula_fsm.v Line: 39
+Warning (10240): Verilog HDL Always Construct warning at formula_fsm.v(58): inferring latch(es) for variable "start_delay", which holds its previous value in one or more paths through the always construct File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/formula_fsm.v Line: 58
+Info (10041): Inferred latch for "start_delay" at formula_fsm.v(58) File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/formula_fsm.v Line: 58
+Info (12128): Elaborating entity "LFSR" for hierarchy "LFSR:LFSR0" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 16
+Info (12128): Elaborating entity "delay" for hierarchy "delay:DEL0" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 17
+Warning (10230): Verilog HDL assignment warning at delay.v(24): truncated value with size 32 to match size of target (14) File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/delay.v Line: 24
+Info (12128): Elaborating entity "bin2bcd_16" for hierarchy "bin2bcd_16:BCD" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 18
+Info (12128): Elaborating entity "add3_ge5" for hierarchy "bin2bcd_16:BCD|add3_ge5:A1" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/bin2bcd_16.v Line: 26
+Info (12128): Elaborating entity "hex_to_7seg" for hierarchy "hex_to_7seg:SEG0" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 19
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/New folder/ex8/verilog_files/ex8.v Line: 6
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/New folder/ex8/verilog_files/ex8.v Line: 6
-    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: C:/New folder/ex8/verilog_files/ex8.v Line: 6
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 6
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 6
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/New folder/ex8/output_files/ex8.map.smsg
+Info (144001): Generated suppressed messages file H:/GitHub/digital_verilog_coursework/part_2/ex8/output_files/ex8.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/New folder/ex8/verilog_files/ex8.v Line: 4
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/New folder/ex8/verilog_files/ex8.v Line: 4
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/New folder/ex8/verilog_files/ex8.v Line: 4
-Info (21057): Implemented 183 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "KEY[0]" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 4
+    Warning (15610): No output dependent on input pin "KEY[1]" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 4
+    Warning (15610): No output dependent on input pin "KEY[2]" File: H:/GitHub/digital_verilog_coursework/part_2/ex8/verilog_files/ex8.v Line: 4
+Info (21057): Implemented 184 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 31 output pins
-    Info (21061): Implemented 147 logic cells
+    Info (21061): Implemented 148 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 916 megabytes
-    Info: Processing ended: Fri Nov 25 10:20:39 2016
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 895 megabytes
+    Info: Processing ended: Wed Dec 07 12:21:24 2016
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:22
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/New folder/ex8/output_files/ex8.map.smsg.
+The suppressed messages can be found in H:/GitHub/digital_verilog_coursework/part_2/ex8/output_files/ex8.map.smsg.
 
 

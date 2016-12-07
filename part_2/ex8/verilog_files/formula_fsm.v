@@ -8,6 +8,8 @@ reg [1:0] state;
 reg led_on, en_lfsr, start_delay;
 reg [9:0] ledr;
 
+reg [11:0] count;
+
 parameter WAIT_TRIGGER = 2'd0, LIGHT_UP_LEDS = 2'd1, WAIT_FOR_TIMEOUT = 2'd2;
 
 initial 
@@ -33,14 +35,23 @@ always @ (posedge clk)
 		default: ;
 	endcase
 
-always @ (posedge tick)
+always @ (posedge clk)
 	case(state)
 		WAIT_TRIGGER:
-			ledr = 10'b0;
+			ledr = 0;
 		LIGHT_UP_LEDS:
-			ledr <= {ledr[8:0], 1'b1};
-		default:
-			ledr <= 10'h3ff;
+			begin
+				if(count == 1'b0)
+					begin
+						ledr <= {ledr[8:0], 1'b1};
+						count <= 12'd2499;
+					end
+				else
+					begin
+						count <= count - 1'b1;
+					end
+			end
+		default: count <= 12'd2499;
 	endcase
 	
 always @ (*)

@@ -1,5 +1,5 @@
 Fitter report for ex8
-Fri Nov 25 10:21:13 2016
+Wed Dec 07 12:22:02 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
 
 
@@ -64,15 +64,15 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Fri Nov 25 10:21:13 2016           ;
+; Fitter Status                   ; Successful - Wed Dec 07 12:22:02 2016           ;
 ; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
 ; Revision Name                   ; ex8                                             ;
 ; Top-level Entity Name           ; ex8                                             ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 75 / 32,070 ( < 1 % )                           ;
-; Total registers                 ; 76                                              ;
+; Logic utilization (in ALMs)     ; 79 / 32,070 ( < 1 % )                           ;
+; Total registers                 ; 84                                              ;
 ; Total pins                      ; 36 / 457 ( 8 % )                                ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                           ;
@@ -154,14 +154,14 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.5%      ;
+;     Processor 2            ;   0.6%      ;
 ;     Processor 3            ;   0.5%      ;
-;     Processor 4            ;   0.4%      ;
+;     Processor 4            ;   0.5%      ;
 +----------------------------+-------------+
 
 
@@ -210,13 +210,22 @@ agreement for further details.
 ; Node                       ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node                     ; Destination Port ; Destination Port Name ;
 +----------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------+------------------+-----------------------+
 ; CLOCK_50~inputCLKENA0      ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                      ;                  ;                       ;
+; delay:DEL0|state.TIME_OUT  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; delay:DEL0|state.TIME_OUT~DUPLICATE  ;                  ;                       ;
+; formula_fsm:FSM|count[1]   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; formula_fsm:FSM|count[1]~DUPLICATE   ;                  ;                       ;
+; formula_fsm:FSM|count[7]   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; formula_fsm:FSM|count[7]~DUPLICATE   ;                  ;                       ;
+; formula_fsm:FSM|count[11]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; formula_fsm:FSM|count[11]~DUPLICATE  ;                  ;                       ;
 ; tick_50000:TICK0|count[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[0]~DUPLICATE  ;                  ;                       ;
 ; tick_50000:TICK0|count[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[1]~DUPLICATE  ;                  ;                       ;
+; tick_50000:TICK0|count[2]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[2]~DUPLICATE  ;                  ;                       ;
 ; tick_50000:TICK0|count[3]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[3]~DUPLICATE  ;                  ;                       ;
 ; tick_50000:TICK0|count[4]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[4]~DUPLICATE  ;                  ;                       ;
-; tick_50000:TICK0|count[5]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[5]~DUPLICATE  ;                  ;                       ;
+; tick_50000:TICK0|count[6]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[6]~DUPLICATE  ;                  ;                       ;
+; tick_50000:TICK0|count[8]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[8]~DUPLICATE  ;                  ;                       ;
+; tick_50000:TICK0|count[9]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[9]~DUPLICATE  ;                  ;                       ;
 ; tick_50000:TICK0|count[10] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[10]~DUPLICATE ;                  ;                       ;
+; tick_50000:TICK0|count[11] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[11]~DUPLICATE ;                  ;                       ;
 ; tick_50000:TICK0|count[12] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[12]~DUPLICATE ;                  ;                       ;
+; tick_50000:TICK0|count[13] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[13]~DUPLICATE ;                  ;                       ;
 ; tick_50000:TICK0|count[15] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; tick_50000:TICK0|count[15]~DUPLICATE ;                  ;                       ;
 +----------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------+------------------+-----------------------+
 
@@ -325,8 +334,8 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 280 ) ; 0.00 % ( 0 / 280 )         ; 0.00 % ( 0 / 280 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 280 ) ; 0.00 % ( 0 / 280 )         ; 0.00 % ( 0 / 280 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 282 ) ; 0.00 % ( 0 / 282 )         ; 0.00 % ( 0 / 282 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 282 ) ; 0.00 % ( 0 / 282 )         ; 0.00 % ( 0 / 282 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -349,7 +358,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 280 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 282 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -357,7 +366,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/New folder/ex8/output_files/ex8.pin.
+The pin-out file can be found in H:/GitHub/digital_verilog_coursework/part_2/ex8/output_files/ex8.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -365,14 +374,14 @@ The pin-out file can be found in C:/New folder/ex8/output_files/ex8.pin.
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 75 / 32,070        ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 75                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 77 / 32,070        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 31                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 43                 ;       ;
-;         [c] ALMs used for registers                         ; 3                  ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 79 / 32,070        ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 79                 ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 82 / 32,070        ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 28                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 48                 ;       ;
+;         [c] ALMs used for registers                         ; 6                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 32,070         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 32,070         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32,070         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -385,20 +394,20 @@ The pin-out file can be found in C:/New folder/ex8/output_files/ex8.pin.
 ;     -- Logic LABs                                           ; 10                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 139                ;       ;
+; Combinational ALUT usage for logic                          ; 142                ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
-;     -- 6 input functions                                    ; 11                 ;       ;
-;     -- 5 input functions                                    ; 14                 ;       ;
-;     -- 4 input functions                                    ; 33                 ;       ;
-;     -- <=3 input functions                                  ; 81                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
-; Dedicated logic registers                                   ; 76                 ;       ;
+;     -- 6 input functions                                    ; 29                 ;       ;
+;     -- 5 input functions                                    ; 5                  ;       ;
+;     -- 4 input functions                                    ; 40                 ;       ;
+;     -- <=3 input functions                                  ; 68                 ;       ;
+; Combinational ALUT usage for route-throughs                 ; 1                  ;       ;
+; Dedicated logic registers                                   ; 84                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
-;         -- Primary logic registers                          ; 68 / 64,140        ; < 1 % ;
-;         -- Secondary logic registers                        ; 8 / 64,140         ; < 1 % ;
+;         -- Primary logic registers                          ; 67 / 64,140        ; < 1 % ;
+;         -- Secondary logic registers                        ; 17 / 64,140        ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
-;         -- Design implementation registers                  ; 68                 ;       ;
-;         -- Routing optimization registers                   ; 8                  ;       ;
+;         -- Design implementation registers                  ; 67                 ;       ;
+;         -- Routing optimization registers                   ; 17                 ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 36 / 457           ; 8 %   ;
@@ -454,11 +463,11 @@ The pin-out file can be found in C:/New folder/ex8/output_files/ex8.pin.
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 2.7% / 3.1% / 1.6% ;       ;
-; Maximum fan-out                                             ; 41                 ;       ;
-; Highest non-global fan-out                                  ; 41                 ;       ;
-; Total fan-out                                               ; 702                ;       ;
-; Average fan-out                                             ; 2.44               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 2.0% / 2.2% / 1.4% ;       ;
+; Maximum fan-out                                             ; 54                 ;       ;
+; Highest non-global fan-out                                  ; 54                 ;       ;
+; Total fan-out                                               ; 780                ;       ;
+; Average fan-out                                             ; 2.60               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -467,14 +476,14 @@ The pin-out file can be found in C:/New folder/ex8/output_files/ex8.pin.
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Statistic                                                   ; Top                  ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 75 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 75                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 77 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 31                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 43                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 3                    ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 79 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 79                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 82 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 28                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 48                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 6                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32070 ( 0 % )    ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -487,24 +496,24 @@ The pin-out file can be found in C:/New folder/ex8/output_files/ex8.pin.
 ;     -- Logic LABs                                           ; 10                   ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 139                  ; 0                              ;
+; Combinational ALUT usage for logic                          ; 142                  ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
-;     -- 6 input functions                                    ; 11                   ; 0                              ;
-;     -- 5 input functions                                    ; 14                   ; 0                              ;
-;     -- 4 input functions                                    ; 33                   ; 0                              ;
-;     -- <=3 input functions                                  ; 81                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
+;     -- 6 input functions                                    ; 29                   ; 0                              ;
+;     -- 5 input functions                                    ; 5                    ; 0                              ;
+;     -- 4 input functions                                    ; 40                   ; 0                              ;
+;     -- <=3 input functions                                  ; 68                   ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 1                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
 ;     -- 32-address deep                                      ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
-;         -- Primary logic registers                          ; 68 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 8 / 64140 ( < 1 % )  ; 0 / 64140 ( 0 % )              ;
+;         -- Primary logic registers                          ; 67 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 17 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
 ;     -- By function:                                         ;                      ;                                ;
-;         -- Design implementation registers                  ; 68                   ; 0                              ;
-;         -- Routing optimization registers                   ; 8                    ; 0                              ;
+;         -- Design implementation registers                  ; 67                   ; 0                              ;
+;         -- Routing optimization registers                   ; 17                   ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
@@ -521,8 +530,8 @@ The pin-out file can be found in C:/New folder/ex8/output_files/ex8.pin.
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 702                  ; 0                              ;
-;     -- Registered Connections                               ; 302                  ; 0                              ;
+;     -- Total Connections                                    ; 780                  ; 0                              ;
+;     -- Registered Connections                               ; 339                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
 ;     -- Top                                                  ; 0                    ; 0                              ;
@@ -554,7 +563,7 @@ The pin-out file can be found in C:/New folder/ex8/output_files/ex8.pin.
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; CLOCK_50 ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 38                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
+; CLOCK_50 ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 30                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; KEY[0]   ; AA14  ; 3B       ; 36           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; KEY[1]   ; AA15  ; 3B       ; 36           ; 0            ; 17           ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
 ; KEY[2]   ; W15   ; 3B       ; 40           ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; --                        ; User                 ; no        ;
@@ -1533,20 +1542,19 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------+-------------+--------------+
-; |ex8                       ; 74.5 (0.5)           ; 77.0 (0.5)                       ; 2.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 139 (1)             ; 76 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 36   ; 0            ; |ex8                             ; ex8         ; work         ;
-;    |LFSR:LFSR0|            ; 2.6 (2.6)            ; 2.9 (2.9)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|LFSR:LFSR0                  ; LFSR        ; work         ;
-;    |bin2bcd_16:BCD|        ; 6.2 (0.0)            ; 6.2 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD              ; bin2bcd_16  ; work         ;
+; |ex8                       ; 78.5 (0.5)           ; 81.0 (0.5)                       ; 2.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 142 (1)             ; 84 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 36   ; 0            ; |ex8                             ; ex8         ; work         ;
+;    |LFSR:LFSR0|            ; 2.9 (2.9)            ; 3.6 (3.6)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|LFSR:LFSR0                  ; LFSR        ; work         ;
+;    |bin2bcd_16:BCD|        ; 5.4 (0.0)            ; 5.6 (0.0)                        ; 0.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD              ; bin2bcd_16  ; work         ;
 ;       |add3_ge5:A22|       ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A22 ; add3_ge5    ; work         ;
-;       |add3_ge5:A26|       ; 1.3 (1.3)            ; 1.7 (1.7)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A26 ; add3_ge5    ; work         ;
-;       |add3_ge5:A30|       ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A30 ; add3_ge5    ; work         ;
-;       |add3_ge5:A34|       ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A34 ; add3_ge5    ; work         ;
-;       |add3_ge5:A35|       ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A35 ; add3_ge5    ; work         ;
-;    |delay:DEL0|            ; 12.3 (12.3)          ; 13.3 (13.3)                      ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 22 (22)             ; 18 (18)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|delay:DEL0                  ; delay       ; work         ;
-;    |formula_fsm:FSM|       ; 9.1 (9.1)            ; 9.1 (9.1)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 16 (16)             ; 13 (13)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|formula_fsm:FSM             ; formula_fsm ; work         ;
+;       |add3_ge5:A26|       ; 1.3 (1.3)            ; 1.6 (1.6)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A26 ; add3_ge5    ; work         ;
+;       |add3_ge5:A30|       ; 1.7 (1.7)            ; 1.7 (1.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A30 ; add3_ge5    ; work         ;
+;       |add3_ge5:A35|       ; 1.7 (1.7)            ; 1.8 (1.8)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|bin2bcd_16:BCD|add3_ge5:A35 ; add3_ge5    ; work         ;
+;    |delay:DEL0|            ; 14.3 (14.3)          ; 14.3 (14.3)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 25 (25)             ; 19 (19)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|delay:DEL0                  ; delay       ; work         ;
+;    |formula_fsm:FSM|       ; 25.6 (25.6)          ; 26.5 (26.5)                      ; 0.9 (0.9)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 43 (43)             ; 28 (28)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|formula_fsm:FSM             ; formula_fsm ; work         ;
 ;    |hex_to_7seg:SEG0|      ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|hex_to_7seg:SEG0            ; hex_to_7seg ; work         ;
-;    |hex_to_7seg:SEG1|      ; 7.2 (7.2)            ; 7.5 (7.5)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (13)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|hex_to_7seg:SEG1            ; hex_to_7seg ; work         ;
-;    |tick_2500:TICK1|       ; 14.4 (14.4)          ; 15.2 (15.2)                      ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 27 (27)             ; 13 (13)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|tick_2500:TICK1             ; tick_2500   ; work         ;
-;    |tick_50000:TICK0|      ; 18.1 (18.1)          ; 18.8 (18.8)                      ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (36)             ; 25 (25)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|tick_50000:TICK0            ; tick_50000  ; work         ;
+;    |hex_to_7seg:SEG1|      ; 7.7 (7.7)            ; 8.0 (8.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (13)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|hex_to_7seg:SEG1            ; hex_to_7seg ; work         ;
+;    |hex_to_7seg:SEG2|      ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|hex_to_7seg:SEG2            ; hex_to_7seg ; work         ;
+;    |tick_50000:TICK0|      ; 18.5 (18.5)          ; 19.0 (19.0)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 36 (36)             ; 30 (30)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |ex8|tick_50000:TICK0            ; tick_50000  ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1591,7 +1599,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[8]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LEDR[9]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; KEY[3]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; CLOCK_50 ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; CLOCK_50 ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +----------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1605,11 +1613,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; KEY[2]                                          ;                   ;         ;
 ; KEY[3]                                          ;                   ;         ;
 ;      - formula_fsm:FSM|Selector3~0              ; 0                 ; 0       ;
-;      - formula_fsm:FSM|Selector2~0              ; 0                 ; 0       ;
 ;      - formula_fsm:FSM|state.WAIT_FOR_TIMEOUT~0 ; 0                 ; 0       ;
+;      - formula_fsm:FSM|Selector2~0              ; 0                 ; 0       ;
 ; CLOCK_50                                        ;                   ;         ;
-;      - tick_50000:TICK0|CLK_OUT                 ; 1                 ; 0       ;
-;      - tick_2500:TICK1|CLK_OUT                  ; 1                 ; 0       ;
+;      - tick_50000:TICK0|CLK_OUT                 ; 0                 ; 0       ;
 +-------------------------------------------------+-------------------+---------+
 
 
@@ -1618,13 +1625,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; CLOCK_50                            ; PIN_AF14           ; 3       ; Clock                      ; no     ; --                   ; --               ; --                        ;
-; CLOCK_50                            ; PIN_AF14           ; 36      ; Clock                      ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; delay:DEL0|count[2]~0               ; LABCELL_X74_Y7_N48 ; 14      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; delay:DEL0|state.COUNTING           ; FF_X74_Y7_N47      ; 18      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; FF_X75_Y7_N47      ; 19      ; Clock enable, Latch enable ; no     ; --                   ; --               ; --                        ;
-; tick_2500:TICK1|CLK_OUT             ; FF_X74_Y8_N46      ; 10      ; Clock                      ; no     ; --                   ; --               ; --                        ;
-; tick_50000:TICK0|CLK_OUT            ; FF_X74_Y8_N44      ; 41      ; Clock, Clock enable        ; no     ; --                   ; --               ; --                        ;
+; CLOCK_50                            ; PIN_AF14           ; 2       ; Clock                      ; no     ; --                   ; --               ; --                        ;
+; CLOCK_50                            ; PIN_AF14           ; 29      ; Clock                      ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; delay:DEL0|count[0]~0               ; LABCELL_X80_Y3_N54 ; 14      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; delay:DEL0|state.COUNTING           ; FF_X79_Y3_N8       ; 20      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; FF_X80_Y3_N59      ; 26      ; Clock enable, Latch enable ; no     ; --                   ; --               ; --                        ;
+; formula_fsm:FSM|state.WAIT_TRIGGER  ; FF_X78_Y3_N14      ; 18      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; tick_50000:TICK0|CLK_OUT            ; FF_X75_Y3_N50      ; 54      ; Clock                      ; no     ; --                   ; --               ; --                        ;
 +-------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1633,7 +1640,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------+----------------------+------------------+---------------------------+
 ; Name     ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------+----------+---------+----------------------+------------------+---------------------------+
-; CLOCK_50 ; PIN_AF14 ; 36      ; Global Clock         ; GCLK6            ; --                        ;
+; CLOCK_50 ; PIN_AF14 ; 29      ; Global Clock         ; GCLK6            ; --                        ;
 +----------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1642,14 +1649,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 210 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 10 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 75 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 47 / 56,300 ( < 1 % )   ;
+; Block interconnects                         ; 243 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 2 / 13,420 ( < 1 % )    ;
+; C2 interconnects                            ; 78 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 45 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 35 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 49 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1705,12 +1712,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 67 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 72 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 44 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 45 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 129 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 131 / 266,960 ( < 1 % ) ;
+; R14 interconnects                           ; 37 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 35 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 127 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 124 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
@@ -1856,17 +1863,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                      ;
-+-------------------------------------+--------------------------+-------------------+
-; Source Clock(s)                     ; Destination Clock(s)     ; Delay Added in ns ;
-+-------------------------------------+--------------------------+-------------------+
-; CLOCK_50                            ; CLOCK_50                 ; 47.2              ;
-; tick_50000:TICK0|CLK_OUT            ; tick_2500:TICK1|CLK_OUT  ; 26.1              ;
-; tick_50000:TICK0|CLK_OUT            ; tick_50000:TICK0|CLK_OUT ; 22.2              ;
-; tick_2500:TICK1|CLK_OUT             ; tick_2500:TICK1|CLK_OUT  ; 8.3               ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; tick_50000:TICK0|CLK_OUT ; 2.9               ;
-+-------------------------------------+--------------------------+-------------------+
++-------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                                               ;
++--------------------------------------------------------------+--------------------------+-------------------+
+; Source Clock(s)                                              ; Destination Clock(s)     ; Delay Added in ns ;
++--------------------------------------------------------------+--------------------------+-------------------+
+; tick_50000:TICK0|CLK_OUT                                     ; tick_50000:TICK0|CLK_OUT ; 58.9              ;
+; CLOCK_50                                                     ; CLOCK_50                 ; 12.7              ;
+; tick_50000:TICK0|CLK_OUT,formula_fsm:FSM|state.LIGHT_UP_LEDS ; tick_50000:TICK0|CLK_OUT ; 3.8               ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS                          ; tick_50000:TICK0|CLK_OUT ; 3.3               ;
+; tick_50000:TICK0|CLK_OUT,I/O                                 ; tick_50000:TICK0|CLK_OUT ; 1.6               ;
++--------------------------------------------------------------+--------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
@@ -1876,77 +1883,76 @@ This will disable optimization of problematic paths and expose them for further 
 +----------------------------------------+----------------------------------------+-------------------+
 ; Source Register                        ; Destination Register                   ; Delay Added in ns ;
 +----------------------------------------+----------------------------------------+-------------------+
-; tick_50000:TICK0|CLK_OUT               ; tick_2500:TICK1|CLK_OUT                ; 6.343             ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS    ; formula_fsm:FSM|ledr[1]                ; 2.046             ;
-; tick_2500:TICK1|count[0]               ; tick_2500:TICK1|CLK_OUT                ; 2.022             ;
-; tick_2500:TICK1|count[1]               ; tick_2500:TICK1|CLK_OUT                ; 1.994             ;
-; tick_2500:TICK1|count[2]               ; tick_2500:TICK1|CLK_OUT                ; 1.977             ;
-; tick_2500:TICK1|count[3]               ; tick_2500:TICK1|CLK_OUT                ; 1.949             ;
-; tick_2500:TICK1|count[4]               ; tick_2500:TICK1|CLK_OUT                ; 1.942             ;
-; tick_2500:TICK1|count[11]              ; tick_2500:TICK1|CLK_OUT                ; 1.855             ;
-; tick_2500:TICK1|count[5]               ; tick_2500:TICK1|CLK_OUT                ; 1.808             ;
-; tick_2500:TICK1|count[8]               ; tick_2500:TICK1|CLK_OUT                ; 1.701             ;
-; tick_50000:TICK0|count[5]              ; tick_50000:TICK0|CLK_OUT               ; 1.692             ;
-; tick_2500:TICK1|count[9]               ; tick_2500:TICK1|CLK_OUT                ; 1.687             ;
-; tick_2500:TICK1|count[6]               ; tick_2500:TICK1|CLK_OUT                ; 1.681             ;
-; tick_50000:TICK0|count[11]             ; tick_50000:TICK0|CLK_OUT               ; 1.671             ;
-; tick_2500:TICK1|count[7]               ; tick_2500:TICK1|CLK_OUT                ; 1.632             ;
-; tick_2500:TICK1|count[10]              ; tick_2500:TICK1|CLK_OUT                ; 1.624             ;
-; tick_50000:TICK0|count[12]             ; tick_50000:TICK0|CLK_OUT               ; 1.584             ;
-; tick_50000:TICK0|count[14]             ; tick_50000:TICK0|CLK_OUT               ; 1.577             ;
-; tick_50000:TICK0|count[3]              ; tick_50000:TICK0|CLK_OUT               ; 1.569             ;
-; tick_50000:TICK0|count[6]              ; tick_50000:TICK0|CLK_OUT               ; 1.568             ;
-; tick_50000:TICK0|count[8]              ; tick_50000:TICK0|CLK_OUT               ; 1.564             ;
-; tick_50000:TICK0|count[9]              ; tick_50000:TICK0|CLK_OUT               ; 1.555             ;
-; tick_50000:TICK0|count[13]             ; tick_50000:TICK0|CLK_OUT               ; 1.552             ;
-; tick_50000:TICK0|count[4]              ; tick_50000:TICK0|CLK_OUT               ; 1.551             ;
-; tick_50000:TICK0|count[7]              ; tick_50000:TICK0|CLK_OUT               ; 1.536             ;
-; tick_50000:TICK0|count[10]             ; tick_50000:TICK0|CLK_OUT               ; 1.505             ;
-; tick_50000:TICK0|count[0]              ; tick_50000:TICK0|CLK_OUT               ; 1.496             ;
-; tick_50000:TICK0|count[1]              ; tick_50000:TICK0|CLK_OUT               ; 1.467             ;
-; tick_50000:TICK0|count[15]             ; tick_50000:TICK0|CLK_OUT               ; 1.465             ;
-; tick_50000:TICK0|count[2]              ; tick_50000:TICK0|CLK_OUT               ; 1.460             ;
-; formula_fsm:FSM|start_delay            ; delay:DEL0|state.IDLE                  ; 1.326             ;
-; delay:DEL0|count[13]                   ; delay:DEL0|state.IDLE                  ; 1.124             ;
-; formula_fsm:FSM|ledr[8]                ; formula_fsm:FSM|ledr[9]                ; 0.949             ;
-; formula_fsm:FSM|ledr[3]                ; formula_fsm:FSM|ledr[4]                ; 0.939             ;
-; formula_fsm:FSM|ledr[5]                ; formula_fsm:FSM|ledr[6]                ; 0.939             ;
-; formula_fsm:FSM|ledr[7]                ; formula_fsm:FSM|ledr[8]                ; 0.939             ;
-; delay:DEL0|count[12]                   ; delay:DEL0|state.IDLE                  ; 0.934             ;
-; delay:DEL0|count[3]                    ; delay:DEL0|state.IDLE                  ; 0.920             ;
-; delay:DEL0|count[2]                    ; delay:DEL0|state.IDLE                  ; 0.919             ;
-; formula_fsm:FSM|ledr[6]                ; formula_fsm:FSM|ledr[7]                ; 0.916             ;
-; LFSR:LFSR0|COUNT[1]                    ; LFSR:LFSR0|COUNT[1]                    ; 0.915             ;
-; LFSR:LFSR0|COUNT[7]                    ; LFSR:LFSR0|COUNT[1]                    ; 0.915             ;
-; formula_fsm:FSM|ledr[4]                ; formula_fsm:FSM|ledr[5]                ; 0.914             ;
-; delay:DEL0|count[9]                    ; delay:DEL0|state.IDLE                  ; 0.914             ;
-; delay:DEL0|count[8]                    ; delay:DEL0|state.IDLE                  ; 0.912             ;
-; formula_fsm:FSM|ledr[0]                ; formula_fsm:FSM|ledr[1]                ; 0.910             ;
-; formula_fsm:FSM|ledr[2]                ; formula_fsm:FSM|ledr[3]                ; 0.910             ;
-; formula_fsm:FSM|ledr[1]                ; formula_fsm:FSM|ledr[2]                ; 0.900             ;
-; delay:DEL0|count[0]                    ; delay:DEL0|state.IDLE                  ; 0.893             ;
-; delay:DEL0|count[1]                    ; delay:DEL0|state.IDLE                  ; 0.876             ;
-; delay:DEL0|count[4]                    ; delay:DEL0|state.IDLE                  ; 0.821             ;
-; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; formula_fsm:FSM|ledr[1]                ; 0.809             ;
-; delay:DEL0|count[6]                    ; delay:DEL0|state.IDLE                  ; 0.803             ;
-; delay:DEL0|count[5]                    ; delay:DEL0|state.IDLE                  ; 0.803             ;
-; delay:DEL0|count[7]                    ; delay:DEL0|state.IDLE                  ; 0.802             ;
-; delay:DEL0|count[11]                   ; delay:DEL0|state.IDLE                  ; 0.770             ;
-; delay:DEL0|count[10]                   ; delay:DEL0|state.IDLE                  ; 0.761             ;
-; formula_fsm:FSM|ledr[9]                ; formula_fsm:FSM|state.LIGHT_UP_LEDS    ; 0.657             ;
-; LFSR:LFSR0|COUNT[3]                    ; delay:DEL0|count[9]                    ; 0.637             ;
-; LFSR:LFSR0|COUNT[5]                    ; delay:DEL0|count[11]                   ; 0.633             ;
-; LFSR:LFSR0|COUNT[2]                    ; LFSR:LFSR0|COUNT[3]                    ; 0.630             ;
-; delay:DEL0|state.WAIT_LOW              ; delay:DEL0|state.WAIT_LOW              ; 0.622             ;
-; delay:DEL0|state.TIME_OUT              ; delay:DEL0|state.WAIT_LOW              ; 0.622             ;
-; LFSR:LFSR0|COUNT[4]                    ; delay:DEL0|count[10]                   ; 0.620             ;
-; LFSR:LFSR0|COUNT[6]                    ; delay:DEL0|count[12]                   ; 0.620             ;
-; delay:DEL0|state.IDLE                  ; delay:DEL0|count[11]                   ; 0.608             ;
-; delay:DEL0|state.COUNTING              ; delay:DEL0|count[11]                   ; 0.608             ;
-; formula_fsm:FSM|state.WAIT_TRIGGER     ; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; 0.602             ;
-; KEY[3]                                 ; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; 0.602             ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS    ; formula_fsm:FSM|ledr[1]                ; 2.039             ;
+; tick_50000:TICK0|count[5]              ; tick_50000:TICK0|CLK_OUT               ; 1.697             ;
+; tick_50000:TICK0|count[11]             ; tick_50000:TICK0|CLK_OUT               ; 1.669             ;
+; formula_fsm:FSM|start_delay            ; delay:DEL0|state.IDLE                  ; 1.640             ;
+; tick_50000:TICK0|count[9]              ; tick_50000:TICK0|CLK_OUT               ; 1.620             ;
+; tick_50000:TICK0|count[8]              ; tick_50000:TICK0|CLK_OUT               ; 1.620             ;
+; tick_50000:TICK0|count[12]             ; tick_50000:TICK0|CLK_OUT               ; 1.617             ;
+; tick_50000:TICK0|count[6]              ; tick_50000:TICK0|CLK_OUT               ; 1.583             ;
+; tick_50000:TICK0|count[13]             ; tick_50000:TICK0|CLK_OUT               ; 1.577             ;
+; tick_50000:TICK0|count[15]             ; tick_50000:TICK0|CLK_OUT               ; 1.577             ;
+; tick_50000:TICK0|count[14]             ; tick_50000:TICK0|CLK_OUT               ; 1.576             ;
+; tick_50000:TICK0|count[2]              ; tick_50000:TICK0|CLK_OUT               ; 1.573             ;
+; tick_50000:TICK0|count[3]              ; tick_50000:TICK0|CLK_OUT               ; 1.561             ;
+; tick_50000:TICK0|count[4]              ; tick_50000:TICK0|CLK_OUT               ; 1.535             ;
+; tick_50000:TICK0|count[7]              ; tick_50000:TICK0|CLK_OUT               ; 1.534             ;
+; tick_50000:TICK0|count[0]              ; tick_50000:TICK0|CLK_OUT               ; 1.519             ;
+; tick_50000:TICK0|count[1]              ; tick_50000:TICK0|CLK_OUT               ; 1.499             ;
+; tick_50000:TICK0|count[10]             ; tick_50000:TICK0|CLK_OUT               ; 1.470             ;
+; delay:DEL0|count[6]                    ; delay:DEL0|count[11]                   ; 1.038             ;
+; delay:DEL0|count[8]                    ; delay:DEL0|count[11]                   ; 1.036             ;
+; delay:DEL0|count[13]                   ; delay:DEL0|count[11]                   ; 1.008             ;
+; formula_fsm:FSM|count[1]               ; formula_fsm:FSM|ledr[0]                ; 0.996             ;
+; formula_fsm:FSM|count[6]               ; formula_fsm:FSM|ledr[0]                ; 0.988             ;
+; formula_fsm:FSM|count[8]               ; formula_fsm:FSM|ledr[0]                ; 0.985             ;
+; delay:DEL0|count[4]                    ; delay:DEL0|count[11]                   ; 0.981             ;
+; LFSR:LFSR0|COUNT[1]                    ; LFSR:LFSR0|COUNT[2]                    ; 0.980             ;
+; delay:DEL0|count[10]                   ; delay:DEL0|count[11]                   ; 0.980             ;
+; formula_fsm:FSM|count[0]               ; formula_fsm:FSM|ledr[0]                ; 0.975             ;
+; formula_fsm:FSM|count[7]               ; formula_fsm:FSM|ledr[0]                ; 0.968             ;
+; delay:DEL0|state.COUNTING              ; delay:DEL0|state.IDLE                  ; 0.923             ;
+; delay:DEL0|count[0]                    ; delay:DEL0|count[11]                   ; 0.895             ;
+; delay:DEL0|count[1]                    ; delay:DEL0|count[11]                   ; 0.874             ;
+; delay:DEL0|count[7]                    ; delay:DEL0|count[11]                   ; 0.872             ;
+; delay:DEL0|count[2]                    ; delay:DEL0|count[11]                   ; 0.845             ;
+; delay:DEL0|count[11]                   ; delay:DEL0|count[11]                   ; 0.843             ;
+; delay:DEL0|state.IDLE                  ; delay:DEL0|state.COUNTING              ; 0.836             ;
+; delay:DEL0|count[12]                   ; delay:DEL0|count[11]                   ; 0.833             ;
+; formula_fsm:FSM|count[11]              ; formula_fsm:FSM|ledr[0]                ; 0.830             ;
+; delay:DEL0|state.TIME_OUT              ; delay:DEL0|state.IDLE                  ; 0.820             ;
+; delay:DEL0|count[3]                    ; delay:DEL0|count[11]                   ; 0.813             ;
+; delay:DEL0|count[9]                    ; delay:DEL0|count[11]                   ; 0.801             ;
+; delay:DEL0|count[5]                    ; delay:DEL0|count[11]                   ; 0.801             ;
+; formula_fsm:FSM|ledr[1]                ; formula_fsm:FSM|ledr[2]                ; 0.795             ;
+; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; formula_fsm:FSM|count[8]               ; 0.791             ;
+; formula_fsm:FSM|count[3]               ; formula_fsm:FSM|ledr[0]                ; 0.768             ;
+; delay:DEL0|state.WAIT_LOW              ; delay:DEL0|state.IDLE                  ; 0.768             ;
+; formula_fsm:FSM|count[2]               ; formula_fsm:FSM|ledr[0]                ; 0.766             ;
+; formula_fsm:FSM|ledr[0]                ; formula_fsm:FSM|ledr[0]                ; 0.737             ;
+; formula_fsm:FSM|count[10]              ; formula_fsm:FSM|ledr[0]                ; 0.737             ;
+; formula_fsm:FSM|count[9]               ; formula_fsm:FSM|ledr[0]                ; 0.737             ;
+; formula_fsm:FSM|count[4]               ; formula_fsm:FSM|ledr[0]                ; 0.737             ;
+; formula_fsm:FSM|count[5]               ; formula_fsm:FSM|ledr[0]                ; 0.737             ;
+; LFSR:LFSR0|COUNT[3]                    ; LFSR:LFSR0|COUNT[4]                    ; 0.731             ;
+; formula_fsm:FSM|ledr[8]                ; formula_fsm:FSM|ledr[9]                ; 0.729             ;
+; formula_fsm:FSM|ledr[9]                ; formula_fsm:FSM|ledr[9]                ; 0.729             ;
+; LFSR:LFSR0|COUNT[4]                    ; LFSR:LFSR0|COUNT[5]                    ; 0.719             ;
+; formula_fsm:FSM|ledr[2]                ; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; 0.711             ;
+; formula_fsm:FSM|ledr[3]                ; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; 0.711             ;
+; formula_fsm:FSM|ledr[4]                ; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; 0.711             ;
+; formula_fsm:FSM|ledr[5]                ; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; 0.711             ;
+; formula_fsm:FSM|ledr[6]                ; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; 0.711             ;
+; formula_fsm:FSM|ledr[7]                ; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; 0.711             ;
+; KEY[3]                                 ; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; 0.711             ;
+; formula_fsm:FSM|state.WAIT_TRIGGER     ; formula_fsm:FSM|state.WAIT_FOR_TIMEOUT ; 0.711             ;
+; LFSR:LFSR0|COUNT[7]                    ; LFSR:LFSR0|COUNT[1]                    ; 0.663             ;
+; LFSR:LFSR0|COUNT[5]                    ; LFSR:LFSR0|COUNT[6]                    ; 0.580             ;
+; LFSR:LFSR0|COUNT[6]                    ; LFSR:LFSR0|COUNT[7]                    ; 0.570             ;
+; LFSR:LFSR0|COUNT[2]                    ; LFSR:LFSR0|COUNT[3]                    ; 0.563             ;
 +----------------------------------------+----------------------------------------+-------------------+
-Note: This table only shows the top 69 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 68 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1961,7 +1967,7 @@ Info (171003): Fitter is performing an Auto Fit compilation, which may decrease 
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): CLOCK_50~inputCLKENA0 with 28 fanout uses global clock CLKCTRL_G6
+    Info (11162): CLOCK_50~inputCLKENA0 with 16 fanout uses global clock CLKCTRL_G6
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Warning (335093): TimeQuest Timing Analyzer is analyzing 1 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
@@ -2027,28 +2033,28 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X67_Y0 to location X77_Y10
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X78_Y0 to location X89_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
-Info (11888): Total time spent on timing analysis during the Fitter is 0.42 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
+Info (11888): Total time spent on timing analysis during the Fitter is 0.44 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/New folder/ex8/output_files/ex8.fit.smsg
+Info (144001): Generated suppressed messages file H:/GitHub/digital_verilog_coursework/part_2/ex8/output_files/ex8.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 51 warnings
-    Info: Peak virtual memory: 2595 megabytes
-    Info: Processing ended: Fri Nov 25 10:21:14 2016
-    Info: Elapsed time: 00:00:34
+    Info: Peak virtual memory: 2608 megabytes
+    Info: Processing ended: Wed Dec 07 12:22:05 2016
+    Info: Elapsed time: 00:00:38
     Info: Total CPU time (on all processors): 00:00:58
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/New folder/ex8/output_files/ex8.fit.smsg.
+The suppressed messages can be found in H:/GitHub/digital_verilog_coursework/part_2/ex8/output_files/ex8.fit.smsg.
 
 
