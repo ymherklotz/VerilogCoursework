@@ -1,12 +1,12 @@
-Fitter Status : Successful - Tue Nov 22 11:43:32 2016
-Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+Fitter Status : Successful - Sun Dec 11 18:08:29 2016
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : ex6
 Top-level Entity Name : ex6
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
 Logic utilization (in ALMs) : 99 / 32,070 ( < 1 % )
-Total registers : 35
+Total registers : 33
 Total pins : 38 / 457 ( 8 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )

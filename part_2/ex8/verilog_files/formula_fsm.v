@@ -8,7 +8,7 @@ reg [1:0] state;
 reg led_on, en_lfsr, start_delay;
 reg [9:0] ledr;
 
-reg [11:0] count;
+reg [8:0] count;
 
 parameter WAIT_TRIGGER = 2'd0, LIGHT_UP_LEDS = 2'd1, WAIT_FOR_TIMEOUT = 2'd2;
 
@@ -41,17 +41,17 @@ always @ (posedge clk)
 			ledr = 0;
 		LIGHT_UP_LEDS:
 			begin
-				if(count == 1'b0)
+				if(count == 9'b0)
 					begin
 						ledr <= {ledr[8:0], 1'b1};
-						count <= 12'd2499;
+						count <= 9'd499;
 					end
 				else
 					begin
 						count <= count - 1'b1;
 					end
 			end
-		default: count <= 12'd2499;
+		default: count <= 9'd499;
 	endcase
 	
 always @ (*)

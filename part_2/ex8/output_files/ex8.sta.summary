@@ -3,147 +3,147 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'tick_50000:TICK0|CLK_OUT'
-Slack : -3.351
-TNS   : -141.123
+Slack : -2.968
+TNS   : -107.976
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -2.370
-TNS   : -46.721
+Slack : -2.534
+TNS   : -41.925
 
 Type  : Slow 1100mV 85C Model Setup 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : -1.669
-TNS   : -1.669
+Slack : -1.603
+TNS   : -1.603
 
 Type  : Slow 1100mV 85C Model Hold 'tick_50000:TICK0|CLK_OUT'
-Slack : 0.287
+Slack : 0.203
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.375
+Slack : 0.384
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : 0.603
+Slack : 0.419
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.655
-TNS   : -20.255
+Slack : -0.643
+TNS   : -16.740
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'tick_50000:TICK0|CLK_OUT'
 Slack : -0.394
-TNS   : -31.614
+TNS   : -26.810
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : 0.435
+Slack : 0.357
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'tick_50000:TICK0|CLK_OUT'
-Slack : -3.267
-TNS   : -138.732
+Slack : -2.963
+TNS   : -106.734
 
 Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -2.588
-TNS   : -48.020
+Slack : -2.784
+TNS   : -42.820
 
 Type  : Slow 1100mV 0C Model Setup 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : -1.583
-TNS   : -1.583
+Slack : -1.493
+TNS   : -1.493
 
 Type  : Slow 1100mV 0C Model Hold 'tick_50000:TICK0|CLK_OUT'
-Slack : 0.289
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.391
+Slack : 0.233
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : 0.463
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.406
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.714
-TNS   : -18.725
+Slack : -0.717
+TNS   : -15.605
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'tick_50000:TICK0|CLK_OUT'
 Slack : -0.394
-TNS   : -30.708
+TNS   : -26.816
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : 0.391
+Slack : 0.396
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'tick_50000:TICK0|CLK_OUT'
-Slack : -1.909
-TNS   : -72.643
+Slack : -1.503
+TNS   : -52.250
 
 Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -1.138
-TNS   : -16.318
+Slack : -1.304
+TNS   : -15.219
 
 Type  : Fast 1100mV 85C Model Setup 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : -0.609
-TNS   : -0.609
+Slack : -0.568
+TNS   : -0.568
 
 Type  : Fast 1100mV 85C Model Hold 'tick_50000:TICK0|CLK_OUT'
-Slack : 0.048
+Slack : -0.034
+TNS   : -0.067
+
+Type  : Fast 1100mV 85C Model Hold 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
+Slack : 0.057
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.181
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : 0.219
+Slack : 0.185
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.779
-TNS   : -14.378
+Slack : -0.786
+TNS   : -12.110
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'tick_50000:TICK0|CLK_OUT'
-Slack : -0.014
-TNS   : -0.134
+Slack : 0.065
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : 0.468
+Slack : 0.369
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'tick_50000:TICK0|CLK_OUT'
-Slack : -1.657
-TNS   : -63.529
+Slack : -1.311
+TNS   : -45.679
 
 Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -1.092
-TNS   : -13.791
+Slack : -1.229
+TNS   : -13.104
 
 Type  : Fast 1100mV 0C Model Setup 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : -0.488
-TNS   : -0.488
+Slack : -0.445
+TNS   : -0.445
 
 Type  : Fast 1100mV 0C Model Hold 'tick_50000:TICK0|CLK_OUT'
-Slack : 0.013
-TNS   : 0.000
+Slack : -0.034
+TNS   : -0.067
 
 Type  : Fast 1100mV 0C Model Hold 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : 0.128
-TNS   : 0.000
+Slack : -0.014
+TNS   : -0.014
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.171
+Slack : 0.177
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.829
-TNS   : -17.064
+Slack : -0.844
+TNS   : -14.423
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'tick_50000:TICK0|CLK_OUT'
-Slack : 0.025
+Slack : 0.081
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'formula_fsm:FSM|state.LIGHT_UP_LEDS'
-Slack : 0.460
+Slack : 0.396
 TNS   : 0.000
 
 ------------------------------------------------------------
