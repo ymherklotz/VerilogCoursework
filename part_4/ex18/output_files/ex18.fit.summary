@@ -1,0 +1,20 @@
+Fitter Status : Successful - Fri Dec 02 11:26:58 2016
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+Revision Name : ex18
+Top-level Entity Name : ex18
+Family : Cyclone V
+Device : 5CGXFC7C7F23C8
+Timing Models : Final
+Logic utilization (in ALMs) : 90 / 56,480 ( < 1 % )
+Total registers : 169
+Total pins : 41 / 268 ( 15 % )
+Total virtual pins : 0
+Total block memory bits : 73,728 / 7,024,640 ( 1 % )
+Total RAM Blocks : 9 / 686 ( 1 % )
+Total DSP Blocks : 0 / 156 ( 0 % )
+Total HSSI RX PCSs : 0 / 6 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 6 ( 0 % )
+Total HSSI TX PCSs : 0 / 6 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 6 ( 0 % )
+Total PLLs : 0 / 13 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

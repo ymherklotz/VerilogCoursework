@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Dec 11 20:30:51 2016
-Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Fitter Status : Successful - Wed Dec 07 12:08:07 2016
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Standard Edition
 Revision Name : ex9
 Top-level Entity Name : ex9
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 154 / 32,070 ( < 1 % )
-Total registers : 94
+Logic utilization (in ALMs) : 159 / 32,070 ( < 1 % )
+Total registers : 95
 Total pins : 57 / 457 ( 12 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )

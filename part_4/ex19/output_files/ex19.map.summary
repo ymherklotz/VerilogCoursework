@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue Dec 06 09:46:29 2016
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+Revision Name : ex19
+Top-level Entity Name : ex19
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 126
+Total pins : 55
+Total virtual pins : 0
+Total block memory bits : 65,536
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

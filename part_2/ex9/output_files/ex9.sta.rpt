@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for ex9
-Sun Dec 11 20:31:05 2016
-Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Wed Dec 07 12:08:30 2016
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
 
 
 ---------------------
@@ -61,35 +61,35 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2016  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
+devices manufactured by Altera and sold by Altera or its 
 authorized distributors.  Please refer to the applicable 
 agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; TimeQuest Timing Analyzer Summary                                           ;
-+-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
-; Timing Analyzer       ; TimeQuest                                           ;
-; Revision Name         ; ex9                                                 ;
-; Device Family         ; Cyclone V                                           ;
-; Device Name           ; 5CSEMA5F31C6                                        ;
-; Timing Models         ; Final                                               ;
-; Delay Model           ; Combined                                            ;
-; Rise/Fall Delays      ; Enabled                                             ;
-+-----------------------+-----------------------------------------------------+
++---------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                               ;
++-----------------------+---------------------------------------------------------+
+; Quartus Prime Version ; Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition ;
+; Timing Analyzer       ; TimeQuest                                               ;
+; Revision Name         ; ex9                                                     ;
+; Device Family         ; Cyclone V                                               ;
+; Device Name           ; 5CSEMA5F31C6                                            ;
+; Timing Models         ; Final                                                   ;
+; Delay Model           ; Combined                                                ;
+; Rise/Fall Delays      ; Enabled                                                 ;
++-----------------------+---------------------------------------------------------+
 
 
 +------------------------------------------+
@@ -100,14 +100,14 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.19        ;
+; Average used               ; 1.10        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   6.2%      ;
-;     Processor 3            ;   6.2%      ;
-;     Processor 4            ;   6.1%      ;
+;     Processor 2            ;   3.3%      ;
+;     Processor 3            ;   3.3%      ;
+;     Processor 4            ;   3.2%      ;
 +----------------------------+-------------+
 
 
@@ -127,8 +127,8 @@ agreement for further details.
 +------------+-----------------+--------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name               ; Note ;
 +------------+-----------------+--------------------------+------+
-; 202.72 MHz ; 202.72 MHz      ; tick_50000:TICK0|CLK_OUT ;      ;
-; 312.7 MHz  ; 312.7 MHz       ; CLOCK_50                 ;      ;
+; 224.11 MHz ; 224.11 MHz      ; tick_50000:TICK0|CLK_OUT ;      ;
+; 328.19 MHz ; 328.19 MHz      ; CLOCK_50                 ;      ;
 +------------+-----------------+--------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -144,9 +144,9 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; tick_50000:TICK0|CLK_OUT            ; -3.933 ; -177.510      ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; -2.353 ; -2.353        ;
-; CLOCK_50                            ; -2.198 ; -38.652       ;
+; tick_50000:TICK0|CLK_OUT            ; -3.462 ; -161.413      ;
+; CLOCK_50                            ; -2.047 ; -40.775       ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; -1.675 ; -1.675        ;
 +-------------------------------------+--------+---------------+
 
 
@@ -155,9 +155,9 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------+-------+---------------+
 ; Clock                               ; Slack ; End Point TNS ;
 +-------------------------------------+-------+---------------+
-; tick_50000:TICK0|CLK_OUT            ; 0.222 ; 0.000         ;
-; CLOCK_50                            ; 0.381 ; 0.000         ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 1.023 ; 0.000         ;
+; tick_50000:TICK0|CLK_OUT            ; 0.179 ; 0.000         ;
+; CLOCK_50                            ; 0.385 ; 0.000         ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.629 ; 0.000         ;
 +-------------------------------------+-------+---------------+
 
 
@@ -178,9 +178,9 @@ No paths to report.
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; CLOCK_50                            ; -0.658 ; -17.489       ;
-; tick_50000:TICK0|CLK_OUT            ; -0.394 ; -41.338       ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.439  ; 0.000         ;
+; CLOCK_50                            ; -0.637 ; -18.132       ;
+; tick_50000:TICK0|CLK_OUT            ; -0.394 ; -38.762       ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.459  ; 0.000         ;
 +-------------------------------------+--------+---------------+
 
 
@@ -195,8 +195,8 @@ No synchronizer chains to report.
 +------------+-----------------+--------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name               ; Note ;
 +------------+-----------------+--------------------------+------+
-; 205.47 MHz ; 205.47 MHz      ; tick_50000:TICK0|CLK_OUT ;      ;
-; 294.9 MHz  ; 294.9 MHz       ; CLOCK_50                 ;      ;
+; 226.45 MHz ; 226.45 MHz      ; tick_50000:TICK0|CLK_OUT ;      ;
+; 300.93 MHz ; 300.93 MHz      ; CLOCK_50                 ;      ;
 +------------+-----------------+--------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -206,9 +206,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; tick_50000:TICK0|CLK_OUT            ; -3.867 ; -173.770      ;
-; CLOCK_50                            ; -2.391 ; -39.269       ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; -2.208 ; -2.208        ;
+; tick_50000:TICK0|CLK_OUT            ; -3.416 ; -157.230      ;
+; CLOCK_50                            ; -2.323 ; -41.799       ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; -1.568 ; -1.568        ;
 +-------------------------------------+--------+---------------+
 
 
@@ -217,9 +217,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------+-------+---------------+
 ; Clock                               ; Slack ; End Point TNS ;
 +-------------------------------------+-------+---------------+
-; tick_50000:TICK0|CLK_OUT            ; 0.218 ; 0.000         ;
-; CLOCK_50                            ; 0.401 ; 0.000         ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.821 ; 0.000         ;
+; tick_50000:TICK0|CLK_OUT            ; 0.193 ; 0.000         ;
+; CLOCK_50                            ; 0.405 ; 0.000         ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.501 ; 0.000         ;
 +-------------------------------------+-------+---------------+
 
 
@@ -240,9 +240,9 @@ No paths to report.
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; CLOCK_50                            ; -0.707 ; -16.083       ;
-; tick_50000:TICK0|CLK_OUT            ; -0.394 ; -42.153       ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.422  ; 0.000         ;
+; CLOCK_50                            ; -0.689 ; -16.816       ;
+; tick_50000:TICK0|CLK_OUT            ; -0.394 ; -38.286       ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.412  ; 0.000         ;
 +-------------------------------------+--------+---------------+
 
 
@@ -257,21 +257,21 @@ No synchronizer chains to report.
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; tick_50000:TICK0|CLK_OUT            ; -2.263 ; -94.992       ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; -1.029 ; -1.029        ;
-; CLOCK_50                            ; -1.002 ; -13.129       ;
+; tick_50000:TICK0|CLK_OUT            ; -1.794 ; -79.872       ;
+; CLOCK_50                            ; -0.918 ; -13.912       ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; -0.572 ; -0.572        ;
 +-------------------------------------+--------+---------------+
 
 
-+-------------------------------------------------------------+
-; Fast 1100mV 85C Model Hold Summary                          ;
-+-------------------------------------+-------+---------------+
-; Clock                               ; Slack ; End Point TNS ;
-+-------------------------------------+-------+---------------+
-; tick_50000:TICK0|CLK_OUT            ; 0.065 ; 0.000         ;
-; CLOCK_50                            ; 0.184 ; 0.000         ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.518 ; 0.000         ;
-+-------------------------------------+-------+---------------+
++--------------------------------------------------------------+
+; Fast 1100mV 85C Model Hold Summary                           ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; tick_50000:TICK0|CLK_OUT            ; -0.020 ; -0.037        ;
+; CLOCK_50                            ; 0.185  ; 0.000         ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.202  ; 0.000         ;
++-------------------------------------+--------+---------------+
 
 
 ------------------------------------------
@@ -291,9 +291,9 @@ No paths to report.
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; CLOCK_50                            ; -0.771 ; -12.597       ;
-; tick_50000:TICK0|CLK_OUT            ; -0.035 ; -1.610        ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.481  ; 0.000         ;
+; CLOCK_50                            ; -0.740 ; -12.957       ;
+; tick_50000:TICK0|CLK_OUT            ; -0.012 ; -0.190        ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.478  ; 0.000         ;
 +-------------------------------------+--------+---------------+
 
 
@@ -308,21 +308,21 @@ No synchronizer chains to report.
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; tick_50000:TICK0|CLK_OUT            ; -1.967 ; -82.047       ;
-; CLOCK_50                            ; -0.958 ; -11.100       ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; -0.846 ; -0.846        ;
+; tick_50000:TICK0|CLK_OUT            ; -1.581 ; -69.264       ;
+; CLOCK_50                            ; -0.868 ; -11.639       ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; -0.462 ; -0.462        ;
 +-------------------------------------+--------+---------------+
 
 
-+-------------------------------------------------------------+
-; Fast 1100mV 0C Model Hold Summary                           ;
-+-------------------------------------+-------+---------------+
-; Clock                               ; Slack ; End Point TNS ;
-+-------------------------------------+-------+---------------+
-; tick_50000:TICK0|CLK_OUT            ; 0.049 ; 0.000         ;
-; CLOCK_50                            ; 0.175 ; 0.000         ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.366 ; 0.000         ;
-+-------------------------------------+-------+---------------+
++--------------------------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary                            ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; tick_50000:TICK0|CLK_OUT            ; -0.021 ; -0.052        ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.122  ; 0.000         ;
+; CLOCK_50                            ; 0.177  ; 0.000         ;
++-------------------------------------+--------+---------------+
 
 
 -----------------------------------------
@@ -342,9 +342,9 @@ No paths to report.
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; CLOCK_50                            ; -0.807 ; -14.887       ;
-; tick_50000:TICK0|CLK_OUT            ; -0.016 ; -0.422        ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.477  ; 0.000         ;
+; CLOCK_50                            ; -0.789 ; -15.486       ;
+; tick_50000:TICK0|CLK_OUT            ; 0.024  ; 0.000         ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 0.468  ; 0.000         ;
 +-------------------------------------+--------+---------------+
 
 
@@ -354,20 +354,20 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                ;
-+--------------------------------------+----------+-------+----------+---------+---------------------+
-; Clock                                ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+--------------------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack                     ; -3.933   ; 0.049 ; N/A      ; N/A     ; -0.807              ;
-;  CLOCK_50                            ; -2.391   ; 0.175 ; N/A      ; N/A     ; -0.807              ;
-;  formula_fsm:FSM|state.LIGHT_UP_LEDS ; -2.353   ; 0.366 ; N/A      ; N/A     ; 0.422               ;
-;  tick_50000:TICK0|CLK_OUT            ; -3.933   ; 0.049 ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS                      ; -218.515 ; 0.0   ; 0.0      ; 0.0     ; -58.827             ;
-;  CLOCK_50                            ; -39.269  ; 0.000 ; N/A      ; N/A     ; -17.489             ;
-;  formula_fsm:FSM|state.LIGHT_UP_LEDS ; -2.353   ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  tick_50000:TICK0|CLK_OUT            ; -177.510 ; 0.000 ; N/A      ; N/A     ; -42.153             ;
-+--------------------------------------+----------+-------+----------+---------+---------------------+
++-----------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                 ;
++--------------------------------------+----------+--------+----------+---------+---------------------+
+; Clock                                ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------------------------+----------+--------+----------+---------+---------------------+
+; Worst-case Slack                     ; -3.462   ; -0.021 ; N/A      ; N/A     ; -0.789              ;
+;  CLOCK_50                            ; -2.323   ; 0.177  ; N/A      ; N/A     ; -0.789              ;
+;  formula_fsm:FSM|state.LIGHT_UP_LEDS ; -1.675   ; 0.122  ; N/A      ; N/A     ; 0.412               ;
+;  tick_50000:TICK0|CLK_OUT            ; -3.462   ; -0.021 ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS                      ; -203.863 ; -0.052 ; 0.0      ; 0.0     ; -56.894             ;
+;  CLOCK_50                            ; -41.799  ; 0.000  ; N/A      ; N/A     ; -18.132             ;
+;  formula_fsm:FSM|state.LIGHT_UP_LEDS ; -1.675   ; 0.000  ; N/A      ; N/A     ; 0.000               ;
+;  tick_50000:TICK0|CLK_OUT            ; -161.413 ; -0.052 ; N/A      ; N/A     ; -38.762             ;
++--------------------------------------+----------+--------+----------+---------+---------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -688,10 +688,10 @@ No synchronizer chains to report.
 +-------------------------------------+-------------------------------------+----------+----------+----------+----------+
 ; From Clock                          ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------+-------------------------------------+----------+----------+----------+----------+
-; CLOCK_50                            ; CLOCK_50                            ; 386      ; 0        ; 0        ; 0        ;
+; CLOCK_50                            ; CLOCK_50                            ; 416      ; 0        ; 0        ; 0        ;
 ; tick_50000:TICK0|CLK_OUT            ; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 1        ; 0        ; 0        ; 0        ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; tick_50000:TICK0|CLK_OUT            ; 38       ; 21       ; 0        ; 0        ;
-; tick_50000:TICK0|CLK_OUT            ; tick_50000:TICK0|CLK_OUT            ; 955      ; 0        ; 0        ; 0        ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; tick_50000:TICK0|CLK_OUT            ; 43       ; 25       ; 0        ; 0        ;
+; tick_50000:TICK0|CLK_OUT            ; tick_50000:TICK0|CLK_OUT            ; 1042     ; 0        ; 0        ; 0        ;
 +-------------------------------------+-------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -701,10 +701,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------------------------+-------------------------------------+----------+----------+----------+----------+
 ; From Clock                          ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------+-------------------------------------+----------+----------+----------+----------+
-; CLOCK_50                            ; CLOCK_50                            ; 386      ; 0        ; 0        ; 0        ;
+; CLOCK_50                            ; CLOCK_50                            ; 416      ; 0        ; 0        ; 0        ;
 ; tick_50000:TICK0|CLK_OUT            ; formula_fsm:FSM|state.LIGHT_UP_LEDS ; 1        ; 0        ; 0        ; 0        ;
-; formula_fsm:FSM|state.LIGHT_UP_LEDS ; tick_50000:TICK0|CLK_OUT            ; 38       ; 21       ; 0        ; 0        ;
-; tick_50000:TICK0|CLK_OUT            ; tick_50000:TICK0|CLK_OUT            ; 955      ; 0        ; 0        ; 0        ;
+; formula_fsm:FSM|state.LIGHT_UP_LEDS ; tick_50000:TICK0|CLK_OUT            ; 43       ; 25       ; 0        ; 0        ;
+; tick_50000:TICK0|CLK_OUT            ; tick_50000:TICK0|CLK_OUT            ; 1042     ; 0        ; 0        ; 0        ;
 +-------------------------------------+-------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -877,8 +877,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
-    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Dec 11 20:31:00 2016
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+    Info: Processing started: Wed Dec 07 12:08:21 2016
 Info: Command: quartus_sta ex9 -c ex9
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -898,108 +898,108 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.933
+Info (332146): Worst-case setup slack is -3.462
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.933            -177.510 tick_50000:TICK0|CLK_OUT 
-    Info (332119):    -2.353              -2.353 formula_fsm:FSM|state.LIGHT_UP_LEDS 
-    Info (332119):    -2.198             -38.652 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.222
+    Info (332119):    -3.462            -161.413 tick_50000:TICK0|CLK_OUT 
+    Info (332119):    -2.047             -40.775 CLOCK_50 
+    Info (332119):    -1.675              -1.675 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+Info (332146): Worst-case hold slack is 0.179
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.222               0.000 tick_50000:TICK0|CLK_OUT 
-    Info (332119):     0.381               0.000 CLOCK_50 
-    Info (332119):     1.023               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+    Info (332119):     0.179               0.000 tick_50000:TICK0|CLK_OUT 
+    Info (332119):     0.385               0.000 CLOCK_50 
+    Info (332119):     0.629               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.658
+Info (332146): Worst-case minimum pulse width slack is -0.637
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.658             -17.489 CLOCK_50 
-    Info (332119):    -0.394             -41.338 tick_50000:TICK0|CLK_OUT 
-    Info (332119):     0.439               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+    Info (332119):    -0.637             -18.132 CLOCK_50 
+    Info (332119):    -0.394             -38.762 tick_50000:TICK0|CLK_OUT 
+    Info (332119):     0.459               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.867
+Info (332146): Worst-case setup slack is -3.416
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.867            -173.770 tick_50000:TICK0|CLK_OUT 
-    Info (332119):    -2.391             -39.269 CLOCK_50 
-    Info (332119):    -2.208              -2.208 formula_fsm:FSM|state.LIGHT_UP_LEDS 
-Info (332146): Worst-case hold slack is 0.218
+    Info (332119):    -3.416            -157.230 tick_50000:TICK0|CLK_OUT 
+    Info (332119):    -2.323             -41.799 CLOCK_50 
+    Info (332119):    -1.568              -1.568 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+Info (332146): Worst-case hold slack is 0.193
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.218               0.000 tick_50000:TICK0|CLK_OUT 
-    Info (332119):     0.401               0.000 CLOCK_50 
-    Info (332119):     0.821               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+    Info (332119):     0.193               0.000 tick_50000:TICK0|CLK_OUT 
+    Info (332119):     0.405               0.000 CLOCK_50 
+    Info (332119):     0.501               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.707
+Info (332146): Worst-case minimum pulse width slack is -0.689
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.707             -16.083 CLOCK_50 
-    Info (332119):    -0.394             -42.153 tick_50000:TICK0|CLK_OUT 
-    Info (332119):     0.422               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+    Info (332119):    -0.689             -16.816 CLOCK_50 
+    Info (332119):    -0.394             -38.286 tick_50000:TICK0|CLK_OUT 
+    Info (332119):     0.412               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.263
+Info (332146): Worst-case setup slack is -1.794
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.263             -94.992 tick_50000:TICK0|CLK_OUT 
-    Info (332119):    -1.029              -1.029 formula_fsm:FSM|state.LIGHT_UP_LEDS 
-    Info (332119):    -1.002             -13.129 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.065
+    Info (332119):    -1.794             -79.872 tick_50000:TICK0|CLK_OUT 
+    Info (332119):    -0.918             -13.912 CLOCK_50 
+    Info (332119):    -0.572              -0.572 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+Info (332146): Worst-case hold slack is -0.020
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.065               0.000 tick_50000:TICK0|CLK_OUT 
-    Info (332119):     0.184               0.000 CLOCK_50 
-    Info (332119):     0.518               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+    Info (332119):    -0.020              -0.037 tick_50000:TICK0|CLK_OUT 
+    Info (332119):     0.185               0.000 CLOCK_50 
+    Info (332119):     0.202               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.771
+Info (332146): Worst-case minimum pulse width slack is -0.740
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.771             -12.597 CLOCK_50 
-    Info (332119):    -0.035              -1.610 tick_50000:TICK0|CLK_OUT 
-    Info (332119):     0.481               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+    Info (332119):    -0.740             -12.957 CLOCK_50 
+    Info (332119):    -0.012              -0.190 tick_50000:TICK0|CLK_OUT 
+    Info (332119):     0.478               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.967
+Info (332146): Worst-case setup slack is -1.581
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.967             -82.047 tick_50000:TICK0|CLK_OUT 
-    Info (332119):    -0.958             -11.100 CLOCK_50 
-    Info (332119):    -0.846              -0.846 formula_fsm:FSM|state.LIGHT_UP_LEDS 
-Info (332146): Worst-case hold slack is 0.049
+    Info (332119):    -1.581             -69.264 tick_50000:TICK0|CLK_OUT 
+    Info (332119):    -0.868             -11.639 CLOCK_50 
+    Info (332119):    -0.462              -0.462 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+Info (332146): Worst-case hold slack is -0.021
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.049               0.000 tick_50000:TICK0|CLK_OUT 
-    Info (332119):     0.175               0.000 CLOCK_50 
-    Info (332119):     0.366               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+    Info (332119):    -0.021              -0.052 tick_50000:TICK0|CLK_OUT 
+    Info (332119):     0.122               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+    Info (332119):     0.177               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.807
+Info (332146): Worst-case minimum pulse width slack is -0.789
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.807             -14.887 CLOCK_50 
-    Info (332119):    -0.016              -0.422 tick_50000:TICK0|CLK_OUT 
-    Info (332119):     0.477               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
+    Info (332119):    -0.789             -15.486 CLOCK_50 
+    Info (332119):     0.024               0.000 tick_50000:TICK0|CLK_OUT 
+    Info (332119):     0.468               0.000 formula_fsm:FSM|state.LIGHT_UP_LEDS 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 1216 megabytes
-    Info: Processing ended: Sun Dec 11 20:31:05 2016
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 1213 megabytes
+    Info: Processing ended: Wed Dec 07 12:08:30 2016
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:06
 
 

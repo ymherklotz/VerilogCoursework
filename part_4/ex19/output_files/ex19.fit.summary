@@ -1,0 +1,20 @@
+Fitter Status : Successful - Tue Dec 06 09:47:11 2016
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Standard Edition
+Revision Name : ex19
+Top-level Entity Name : ex19
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 118 / 32,070 ( < 1 % )
+Total registers : 136
+Total pins : 55 / 457 ( 12 % )
+Total virtual pins : 0
+Total block memory bits : 65,536 / 4,065,280 ( 2 % )
+Total RAM Blocks : 8 / 397 ( 2 % )
+Total DSP Blocks : 0 / 87 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

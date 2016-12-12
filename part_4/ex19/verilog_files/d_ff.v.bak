@@ -1,0 +1,6 @@
+module d_ff(clk, in, out);
+
+	always @ (posedge clk)
+		in <= out;
+
+endmodule
